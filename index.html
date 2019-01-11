@@ -15,15 +15,12 @@
     }
 </style>
 
-<body class="w3-light-grey">
-
-    <!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
+<body class="w3-pale-blue">
     <div class="w3-content" style="max-width:1400px">
 
         <!-- Header -->
-        <header class="w3-container w3-center w3-padding-32 w3-grey">
-            <h1><b>Welcome to <span class="w3-tag">Erick's</span> Blog!</b></h1> 
+        <header class="w3-container w3-center w3-padding-32">
+            <h1><b>WELCOME TO <span class="w3-tag">ERICK'S</span> BLOG!</b></h1> 
             <p>
                 And remember... It's almost Friday! :)
             </p>
@@ -32,21 +29,32 @@ and is wrapped around the whole page content, except for the footer in this exam
         <!-- Grid -->
         <div class="w3-row">
             <!-- Introduction menu -->
-            <div class="w3-col l4">
+            <div class="w3-col w3-third">
                 <!-- About Card -->
-                <div class="w3-card w3-margin w3-margin-top">
-                    <!--<img src="" style="width:100%">-->
-                    <div class="w3-container w3-white">
+                <div class="w3-card w3-margin w3-margin-top w3-white">
+                    <div class="w3-container w3-padding w3-deep-purple">
                         <h4><b>About Me</b></h4>
+                    </div>
+                    <div class="w3-container">
                         <p>
                             Please find a full professional profile on my LinkedIn page using the link below. 
                         </p>
-                        <p>
-                            <a href="https://www.linkedin.com/in/frederick-erick-mccollum-604184104"><button class="w3-button w3-padding-small w3-grey w3-border"><b>LinkedIn Profile >></b></button></a>
-                        </p>
-                        <p>
-                            <a href="https://github.com/frederickm13"><button class="w3-button w3-padding-small w3-grey w3-border"><b>GitHub Profile >></b></button></a>
-                        </p>
+                        <div class="w3-row">
+                            <div class="w3-col w3-half">
+                                <p>
+                                    <a href="https://www.linkedin.com/in/frederick-erick-mccollum-604184104">
+                                        <button class="w3-button w3-padding-small w3-light-grey w3-border"><b>LinkedIn Profile >></b></button>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="w3-col w3-half">
+                                <p>
+                                    <a href="https://github.com/frederickm13">
+                                        <button class="w3-button w3-padding-small w3-light-grey w3-border w3-right"><b>GitHub Profile >></b></button>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <hr>
@@ -54,7 +62,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <!-- Posts -->
                 <div class="w3-card w3-margin">
                     <div class="w3-container w3-padding w3-deep-purple">
-                        <h4>Popular Posts / Projects</h4>
+                        <h4><b>Popular Posts / Projects</b></h4>
                     </div>
                     <ul class="w3-ul w3-hoverable w3-white">
                         <li class="w3-padding-16">
@@ -88,7 +96,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <!-- Labels / tags -->
                 <div class="w3-card w3-margin">
                     <div class="w3-container w3-padding w3-deep-purple">
-                        <h4>Other</h4>
+                        <h4><b>Other</b></h4>
                     </div>
                     <div class="w3-container w3-white">
                         <p>
@@ -101,9 +109,8 @@ and is wrapped around the whole page content, except for the footer in this exam
             </div>
 
             <!-- Blog entries -->
-            <div class="w3-col l8 s12">
+            <div class="w3-col w3-twothird">
                 <div class="w3-card-4 w3-margin w3-white">
-                    <!--<img src="" alt="Norway" style="width:100%">-->
                     <div class="w3-container w3-deep-purple">
                         <h3><b>Featured Blog Post</b></h3>
                         <h5>No Content</h5>
@@ -114,14 +121,14 @@ and is wrapped around the whole page content, except for the footer in this exam
                             <i>There is no blog content to display at this time. Please check back later and see if anything has been added.</i>
                         </p>
                         <div class="w3-row">
-                            <div class="w3-col m8 s12">
+                            <div class="w3-col w3-half">
                                 <p>
-                                    <button class="w3-button w3-padding-large w3-grey w3-border"><b>Read More >></b></button>
+                                    <button class="w3-button w3-padding-large w3-light-grey w3-border"><b>Read More >></b></button>
                                 </p>
                             </div>
-                            <div class="w3-col m4 s6">
+                            <div class="w3-col w3-half">
                                     <p>
-                                        <a href="https://github.com/frederickm13"><button class="w3-button w3-padding-small w3-right w3-grey w3-border"><b>View All >></b></button></a>
+                                        <a href="https://github.com/frederickm13"><button class="w3-button w3-padding-small w3-right w3-light-grey w3-border"><b>View All >></b></button></a>
                                     </p>
                             </div>
                         </div>
@@ -129,7 +136,6 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </div>
                 <hr>
                 <div class="w3-card-4 w3-margin w3-white">
-                    <!--<img src="" alt="Header Photo" style="width:100%">-->
                     <div class="w3-container w3-deep-purple">
                         <h3><b>GitHub Repositories</b></h3>
                         <h5>Please see links and relevant information regarding my GitHub repositories below.</h5>
@@ -157,7 +163,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                         <div class="w3-row">
                             <div class="w3-col m8 s12">
                                 <p>
-                                    <a href="https://github.com/frederickm13"><button class="w3-button w3-padding-large w3-grey w3-border"><b>GitHub Profile >></b></button></a>
+                                    <a href="https://github.com/frederickm13"><button class="w3-button w3-padding-large w3-light-grey w3-border"><b>GitHub Profile >></b></button></a>
                                 </p>
                             </div>
                         </div>
