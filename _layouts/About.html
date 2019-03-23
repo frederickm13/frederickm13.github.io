@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+{% include header.html %}
+
+<body class="w3-pale-blue">
+    <div class="w3-content" style="max-width:1400px">
+        {% include menu.html %}  
+
+        <header class="w3-container w3-center w3-padding-32">
+            <h1><b>{{ page.title }}</b></h1> 
+        </header>
+
+        <div class="w3-center">
+            <img src="/data/images/profileheadshot.png" class="w3-round w3-hide-small w3-hide-medium" style="width:25%">
+            <img src="/data/images/profileheadshot.png" class="w3-round w3-hide-large" style="width:50%">
+        </div>
+
+        <div class="w3-margin w3-card w3-white w3-padding">
+            {{ content }}
+            <hr> 
+            <div class="w3-row w3-grey">
+                <a href="https://www.linkedin.com/in/frederick-erick-mccollum-604184104">
+                <div class="w3-col w3-button w3-center">
+                    <p><b>View LinkedIn Profile</b></p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+</body>
+
+</html>
