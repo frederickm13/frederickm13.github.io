@@ -1,5 +1,5 @@
 ---
-title: CSV Splitter
+title: CSV Splitter GUI
 author: Erick McCollum
 layout: Post
 date:  2019-01-24 -0600
