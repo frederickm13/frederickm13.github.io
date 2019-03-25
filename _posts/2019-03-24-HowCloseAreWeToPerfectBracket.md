@@ -43,8 +43,6 @@ If you enjoy the *NCAA Tournament* and filling out brackets, then I would recomm
 The following sources were referenced when writing this article, and I do not claim ownership of any data or facts taken from these sources. Citations were created using CitationMachine.net.
 
 - Benzie, M. (2019, March 24). The longest we believe an NCAA bracket has ever stayed perfect. Retrieved March 24, 2019, from https://www.ncaa.com/news/basketball-men/bracketiq/2018-03-24/longest-we-believe-ncaa-bracket-has-ever-stayed-perfect
-
 - Powerball.com. Powerball | Powerball. Retrieved March 24, 2019, from https://www.Powerball.com/games/Powerball
 - Wilco, D. (2019, March 17). March Madness: Was your 2018 bracket average? Retrieved March 24, 2019, from https://www.ncaa.com/news/basketball-men/2019-02-27/march-madness-how-do-your-past-brackets-stack-competition
-
 - Wilco, D. (2019, March 21). A perfect NCAA bracket: The absurd odds of the March Madness dream. Retrieved March 24, 2019, from https://www.ncaa.com/news/basketball-men/2019-03-20/perfect-ncaa-bracket-absurd-odds-march-madness-dream
