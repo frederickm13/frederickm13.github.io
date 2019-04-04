@@ -10,6 +10,8 @@ featured: 1
 
 It's *[March Madness](https://www.ncaa.com/march-madness)* time! In the excitement of the annual tournament, I decided to do some research and write a fun article for all you bracket-builders out there.
 
+*EDIT: Since writing this article, there has been a new record set for the number of games picked correctly in an NCAA Tournament bracket. The record is now fifty games picked perfectly before the bracket busted. You can read more about this record-breaking bracket on [NCAA.com](https://www.ncaa.com/news/basketball-men/bracketiq/2019-03-28/record-breaking-perfect-bracket-busts-game-50-purdues-ot).*
+
 *DISCLAIMER: This is an opinion article, and all views on this page are solely my own. I do not claim ownership of any data or facts used in this article. A full list of sources which were referenced in the creation of this article may be found in the "Acknowledgments" at the end of this article.*
 
 As we all build our brackets (some more than others), one can't help but wonder, will there be a perfect bracket this year? This is a question that seems to come up more and more each year during March. The thought of being the first person ever to fill out a perfect *[NCAA Tournament](https://www.ncaa.com/march-madness)* bracket is extremely exciting. Unfortunately, I am here *(along with [others](https://www.ncaa.com/news/basketball-men/2019-03-20/perfect-ncaa-bracket-absurd-odds-march-madness-dream)*) to tell you that this is a dream which none will ever achieve.
