@@ -1,20 +1,22 @@
 ---
-title: CrmWebApiFun.cs "Helper" Class
+title: CrmWebApiFun.cs Sample "Helper" Class
 author: Erick McCollum
 layout: Post
 date:  2019-03-01 -0600
-sourceurl: https://github.com/frederickm13/D365_Projects/tree/master/WebApi
+sourceurl: https://github.com/frederickm13/D365_Samples/tree/master/WebApiCsharp
 category: Project
 featured: 1
 ---
 
-This is a basic, standalone C# "helper" class to assist in working with Dynamics 365 data programmatically using the Web API. More information about the Dynamics 365 Web API may be found at the following links: 
+# CrmWebApiFun.cs Sample "Helper" Class
+
+*Please note, this code is provided to the community as-is. This code is not certified for production use without further review and testing by your organization.*
+
+This is a basic C# sample "helper" class to demonstrate how to work with Dynamics 365 data programmatically using the Web API. More information about the Dynamics 365 Web API may be found at the following official documentation links: 
 - [Query Data using the Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/query-data-web-api)
 - [Web API Reference](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9)
 - [Use the Dynamics 365 for Customer Engagement Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api)
 - [Web API Samples](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/web-api-samples)
-
-*Please note, this code is provided to the community as-is. This code is not certified for production use without further review and testing by your organization.*
 
 This class does not contain all necessary functionality to perform any operation. However, it does provide the following base functionality:
 1. Ability to obtain a CRM instance OAuth token, and instantiate an HttpClient object with this token.
@@ -39,39 +41,44 @@ Initializes a new instance of the `CrmWebApiFun` class for a specified Dynamics 
 
 ## Properties
 #### authContext
-*Type:* [AuthenticationContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext?view=azure-dotnet)
+*Type:* private static readonly [AuthenticationContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext?view=azure-dotnet)
 
-*Description:* This is the authentication authority used by ADAL to obtain the required OAuth token.
+*Description:* This is the authentication authority used by ADAL to obtain the required OAuth token. This property is static because the authentication authority will not change between different instances of the class.
 
 #### authResult
-*Type:* [AuthenticationResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationresult?view=azure-dotnet)
+*Type:* private [AuthenticationResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationresult?view=azure-dotnet)
 
 *Description:* This is the object that is used to store the result, including OAuth token, after authenticating to the `authContext` using ADAL.
 
 #### resource
-*Type:* [string](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.7.2)
+*Type:* private [string](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.7.2)
 
 *Description:* The root resource URL for the specified Dynamics 365 instance. This property is assigned a value when the `CrmWebApiFun` constructor is called. The value of this property is determined using the `CrmApiUrl` parameter that is passed in the constructor.
 
 #### resourceApi
-*Type:* [string](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.7.2)
+*Type:* private [Uri](https://docs.microsoft.com/en-us/dotnet/api/system.uri?view=netframework-4.7.2)
 
 *Description:* The Dynamics 365 Web API URL for the specified Dynamics 365 instance. This property is assigned a value when the `CrmWebApiFun` constructor is called. The value of this property is equal to the `CrmApiUrl` parameter that is passed to the constructor. 
 
 #### clientId
-*Type:* [string](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.7.2)
+*Type:* private [string](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.7.2)
 
 *Description:* The Client ID that is associated with this application after you register it in Azure Active Directory. This property is assigned a value when the `CrmWebApiFun` constructor is called. The value of this property is equal to the `AzureAdClientId` parameter that is passed to the constructor. 
 
 #### redirectUrl
-*Type:* [Uri](https://docs.microsoft.com/en-us/dotnet/api/system.uri?view=netframework-4.7.2)
+*Type:* private [Uri](https://docs.microsoft.com/en-us/dotnet/api/system.uri?view=netframework-4.7.2)
 
 *Description:* The Redirect URI that is associated with this application after you register it in Azure Active Directory. This property is assigned a value when the `CrmWebApiFun` constructor is called. The value of this property is equal to the `AzureAdRedirectUrl` parameter that is passed to the constructor. 
 
-## Methods
-#### GetCrmClient()
+#### request
+*Type:* private readonly [HttpClient](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=netframework-4.8)
 
-This is a private method which is used internally within the `CrmWebApiFun` class to authenticate with the specified Dynamics 365 instance, and obtain/refresh a valid OAuth token. This then returns an [HttpClient](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=netframework-4.7.2) object which is then used by other methods to send HTTP requests.
+*Description:* The instance of the `HttpClient` class that will be used for all web requests sent from the `CrmWebApiFun` instance. One `HttpClient` instance will be used for all requests sent from the `CrmWebApiFun` instance. This is a best practice to lessen the number of sockets in use, as well as prevent the occurrence of `SocketException` errors that can arise if a new `HttpClient` object is instantiated for every web request. Please note that using multiple `HttpClient` objects at once can exhaust the number of available sockets for the system.
+
+## Methods
+#### GetOrRefreshCrmToken()
+
+This is a private method which is used internally within the `CrmWebApiFun` class to authenticate with the specified Dynamics 365 instance, and obtain/refresh a valid OAuth token. The OAuth token is then assigned to the authorization header of the `CrmWebApiFun` instance's `request` property. This private method is executed internally to ensure that a valid OAuth token is set in the authorization header prior to sending any web request.
 
 *Parameters:*
 
@@ -83,7 +90,7 @@ This is a private method which is used internally within the `CrmWebApiFun` clas
 
 #### GetCrmData()
 
-Sends an HTTP GET request to the specified Dynamics 365 instance in order to retrieve data. Data will be returned as a JSON formatted [string](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.7.2) object.
+Sends an HTTP GET request to the specified Dynamics 365 instance in order to retrieve data.
 
 *Parameters:* 
 
@@ -91,7 +98,7 @@ Sends an HTTP GET request to the specified Dynamics 365 instance in order to ret
 
 *Returns:*
 
-- [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=netframework-4.7.2)<[string](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.7.2)> formatted as a JSON string.
+- [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=netframework-4.7.2)<[HttpResponseMessage](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpresponsemessage?view=netframework-4.8)>
 
 #### PostCrmData()
 
@@ -105,7 +112,7 @@ Sends an HTTP POST request to the specified Dynamics 365 instance in order to cr
 
 *Returns:*
 
-- [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=netframework-4.7.2)<[int](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int)> specifying the [HTTPStatusCode](https://docs.microsoft.com/en-us/dotnet/api/system.net.httpstatuscode?view=netframework-4.7.2) that is returned for the request.
+- [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=netframework-4.7.2)<[HttpResponseMessage](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpresponsemessage?view=netframework-4.8)>
  
 #### DeleteCrmData()
 
@@ -117,7 +124,7 @@ Sends an HTTP DELETE request to the specified Dynamics 365 instance in order to 
 
 *Returns:*
 
-- [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=netframework-4.7.2)<[int](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int)> specifying the [HTTPStatusCode](https://docs.microsoft.com/en-us/dotnet/api/system.net.httpstatuscode?view=netframework-4.7.2) that is returned for the request.
+- [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=netframework-4.7.2)<[HttpResponseMessage](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpresponsemessage?view=netframework-4.8)>
  
 #### PatchCrmData()
 
@@ -131,4 +138,4 @@ Sends an HTTP PATCH request to the specified Dynamics 365 instance in order to u
 
 *Returns:*
 
-- [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=netframework-4.7.2)<[int](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int)> specifying the [HTTPStatusCode](https://docs.microsoft.com/en-us/dotnet/api/system.net.httpstatuscode?view=netframework-4.7.2) that is returned for the request.
+- [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=netframework-4.7.2)<[HttpResponseMessage](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpresponsemessage?view=netframework-4.8)>
