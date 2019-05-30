@@ -8,8 +8,6 @@ category: Project
 featured: 1
 ---
 
-# CrmWebApiFun.cs Sample "Helper" Class
-
 *Please note, this code is provided to the community as-is. This code is not certified for production use without further review and testing by your organization.*
 
 This is a basic C# sample "helper" class to demonstrate how to work with Dynamics 365 data programmatically using the Web API. More information about the Dynamics 365 Web API may be found at the following official documentation links: 
