@@ -1,133 +1,136 @@
 ---
 layout: Base
 ---
-<header class="w3-container w3-center w3-padding-32">
-    <h1><b>WELCOME TO <span class="w3-tag">ERICK'S</span> WEBSITE!</b></h1> 
-    <p>
-        And remember... It's almost Friday! :)
-    </p>
-</header>
-
-<!-- Grid -->
-<div class="w3-row">
-    <div class="w3-col w3-third">
-        <div class="w3-card w3-margin w3-margin-top w3-white">
-            <div class="w3-container w3-padding w3-deep-purple">
-                <h4><b>About Me</b></h4>
-            </div>
-            <div class="w3-container">
-                <div class="w3-center w3-padding">
-                    <img src="/data/images/profileheadshot.png" class="w3-round w3-hide-small w3-hide-medium" style="width:50%">
-                    <img src="/data/images/profileheadshot.png" class="w3-round w3-hide-large" style="width:50%">
-                </div>
-                <p>
-                    My name is Erick McCollum. I am currently employed by <a href="https://careers.microsoft.com/us/en/">Microsoft</a> as a Dynamics 365 Support Engineer based in Irving, Tx (Dallas - Fort Worth Area).
-                </p>
-                <p>
-                    Please find additional information using the buttons below.
-                </p>
-            </div>
-                
-                <div class="w3-row w3-grey">
-                    <a href="/about/">
-                        <div class="w3-col w3-mobile l4 m12 s12 w3-center w3-button">
-                            <p>
-                                <b>About</b>
-                            </p>
-                        </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/frederick-erick-mccollum-604184104">
-                        <div class="w3-col w3-mobile l4 m12 s12 w3-center w3-button">
-                            <p>
-                                <b>LinkedIn</b>
-                            </p>
-                        </div>
-                    </a>
-                    <a href="https://github.com/frederickm13">
-                        <div class="w3-col w3-mobile l4 m12 s12 w3-center w3-button">
-                            <p>
-                                <b>GitHub</b>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-        </div>
-        <hr>
-
-        <!-- Repos -->
-        <div class="w3-card w3-margin">
-            <div class="w3-container w3-padding w3-deep-purple">
-                <h4><b>Featured GitHub Repos</b></h4>
-            </div>
-            <ul class="w3-ul w3-hoverable w3-white">
-                <a href="https://github.com/frederickm13/CS_Projects">
-                    <li class="w3-padding-16">
-                        <span class="w3-large"><b>C# Projects</b></span><br>
-                    </li>
-                </a>
-                <a href="https://github.com/frederickm13/Python_Projects">
-                    <li class="w3-padding-16">
-                        <span class="w3-large"><b>Python Projects</b></span><br>
-                    </li>
-                </a>
-                <a href="https://github.com/frederickm13/R_Projects">
-                    <li class="w3-padding-16">
-                        <span class="w3-large"><b>R Projects</b></span><br>
-                    </li>
-                </a>
-                <a href="https://github.com/frederickm13/SQL_Projects">
-                    <li class="w3-padding-16">
-                        <span class="w3-large"><b>SQL Projects</b></span><br>
-                    </li>
-                </a>
-                <a href="https://github.com/frederickm13/D365_Samples">
-                    <li class="w3-padding-16">
-                        <span class="w3-large"><b>Dynamics 365 Samples</b></span><br>
-                    </li>
-                </a>
-                <a href="https://github.com/frederickm13/frederickm13.github.io">
-                    <li class="w3-padding-16">
-                        <span class="w3-large"><b>This Website</b></span><br>
-                    </li>
-                </a>
-            </ul>
-        </div>
-        <hr>
-    </div>
-
-    <!-- Blog entries -->
-    <div class="w3-col w3-twothird">
-        {% for post in site.posts %}
-        {% if post.featured == 1 %}
-        <div class="w3-card-4 w3-margin w3-white">
-            <div class="w3-container w3-deep-purple">
-                <h3><b>Featured Post</b></h3>
-                <h5>{{ post.title }}</h5>
-            </div>
-
-            <div class="w3-container">
-                {{ post.excerpt }}
-            </div>
-            <div class="w3-row w3-grey">
-                <a href="{{ post.url }}">
-                    <div class="w3-col w3-button w3-center w3-half">
-                        <p>
-                            <b>View Post</b>
-                        </p>
-                    </div>
-                </a>
-                <a href="/blog/">
-                    <div class="w3-col w3-button w3-center w3-half">
-                        <p>
-                            <b>View All</b>
-                        </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <hr>
-        {% endif %}
-        {% endfor %}
-        
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a class="w3-bar-item w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge"><b>ErickMcCollum</b>.com</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small w3-hide-medium">
+    <a href="#projects" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">Posts & Projects</a>
+    <a href="#about" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">Contact</a>
     </div>
 </div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large">
+    <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">POSTS & PROJECTS</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+</div>
+</div>
+
+<!-- Header -->
+<header class="w3-content" style="max-width:1500px;" id="home">
+<img class="w3-image w3-hide-small" src="/data/images/ErickAndDog2.jpg" alt="Erick and his dog." width="1500">
+<img class="w3-image w3-hide-medium w3-hide-large" src="/data/images/ErickAndDog.jpg" alt="Erick and his dog." style="width:100%;max-width:1500px">
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1500px">
+
+<!-- Project Section -->
+<div class="w3-container w3-padding-32 w3-card w3-margin w3-white" id="projects">
+    <div class="w3-border-bottom w3-border-grey w3-padding-16">
+    <h2>Featured Posts & Projects</h2>
+    </div>
+    {% for post in site.posts %}
+        {% if post.featured == 1 %}
+            {% assign post_1 = post %}
+        {% endif %}
+        {% if post.featured == 2 %}
+            {% assign post_2 = post %}
+        {% endif %}
+        {% if post.featured == 3 %}
+            {% assign post_3 = post %}
+        {% endif %}
+        {% if post.featured == 4 %}
+            {% assign post_4 = post %}
+        {% endif %}
+    {% endfor %}
+    <div class="w3-row-padding">
+        <div class="w3-col m6">
+            <h3>{{ post_1.title }}</h2>
+            <p>{{ post_1.excerpt }}</p>
+            <a href="{{ post_1.url }}"><div class="w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey">Read More</div></a>
+        </div>
+        <div class="w3-col m6">
+            <h3>{{ post_2.title }}</h2>
+            <p>{{ post_2.excerpt }}</p>
+            <a href="{{ post_2.url }}"><div class="w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey">Read More</div></a>
+        </div>
+    </div>
+    <br>
+    <div class="w3-row-padding">
+        <div class="w3-col w3-border-grey m6">
+            <h3>{{ post_3.title }}</h2>
+            <p>{{ post_3.excerpt }}</p>
+            <a href="{{ post_3.url }}"><div class="w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey">Read More</div></a>
+        </div>
+        <div class="w3-col m6">
+            <h3>{{ post_4.title }}</h2>
+            <p>{{ post_4.excerpt }}</p>
+            <a href="{{ post_4.url }}"><div class="w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey">Read More</div></a>
+        </div>
+    </div>
+    
+    <br>
+    <a href="/blog/"><div class="w3-center w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey" style="width:100%"><p>View All</p></div></a>
+</div>
+
+<!-- About Section -->
+<div class="w3-container w3-padding-32 w3-card w3-margin w3-white" id="about">
+    <h2 class="w3-border-bottom w3-border-grey w3-padding-16">About</h2>
+    <div class="w3-row-padding">
+    <div class="w3-col w3-center l4">
+        <img class="w3-image w3-round" src="/data/images/profileheadshot.png" alt="Profile picture." style="width:100%;max-width:400px">
+    </div>
+    <div class="w3-col l8">
+        {{ content }}
+    </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-32 w3-card w3-margin w3-white" id="contact">
+    <h2 class="w3-border-bottom w3-border-grey w3-padding-16">Contact</h2>
+    <div class="w3-row-padding">
+    <a href="https://www.linkedin.com/in/erick-mccollum">
+        <div class="w3-col s4 w3-button w3-border w3-border-white w3-round-xlarge">
+        <i class="fab fa-linkedin fa-3x"></i>
+        <p>LinkedIn</p>
+        </div>
+    </a>
+    <a href="https://github.com/frederickm13">
+        <div class="w3-col s4 w3-button w3-border w3-border-white w3-round-xlarge">
+        <i class="fab fa-github-square fa-3x"></i>
+        <p>GitHub</p>
+        </div>
+    </a>
+    <a href="mailto:fgmccollum4@gmail.com">
+        <div class="w3-col s4 w3-button w3-border w3-border-white w3-round-xlarge">
+        <i class="fas fa-envelope-square fa-3x"></i>
+        <p>Email</p>
+        </div>
+    </a>
+    </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>

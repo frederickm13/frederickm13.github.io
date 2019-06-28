@@ -1,54 +1,72 @@
 ---
 layout: Base
 ---
-<header class="w3-container w3-center w3-padding-32">
-    <h1><b>{{ page.title }}</b></h1> 
-</header>
-
-<div class="w3-card w3-white w3-padding w3-margin">
-    <h4>Search all posts and projects:</h4>
-    <input class="w3-input w3-border w3-padding" type="text" placeholder="Search all ..." id="searchInput" onkeyup="searchPosts()">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="/" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge"><b>ErickMcCollum</b>.com</a>
+        </div>
+    </div>
 </div>
 
-<div class="w3-container w3-row">
+<div class="w3-padding-32"></div>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1500px">
+
+<header class="w3-container w3-margin w3-padding-32 w3-card w3-white ">
+    <h1 class="w3-center">{{ page.title }}</h1> 
+    <div class="w3-padding">
+        <input class="w3-input w3-border w3-round-xlarge" type="text" placeholder="Search all posts and projects..." id="searchInput" onkeyup="searchPosts()">
+    </div>
+</header>
+
+<div class="w3-row">
     <div class="w3-col w3-half"> 
         <div class="w3-margin w3-padding w3-card w3-white">
-            <div class="w3-center w3-bottombar w3-topbar w3-border-deep-purple">
+            <div class="w3-center w3-bottombar w3-topbar w3-border-black">
                 <h3>Posts</h3>
             </div>
-            <div>
-                <ul class="w3-ul w3-hoverable" id="PostsList">
-                    {% for post in site.posts %}
-                    {% if post.category == "Post" %}
-                    <li>
-                        <a href="{{ post.url }}"><b>{{ post.title }}</b></a>
-                        <p>{{ post.excerpt }}</p>
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
+            <ul class="w3-ul" id="PostsList">
+                {% for post in site.posts %}
+                {% if post.category == "Post" %}
+                <li>
+                    <b>{{ post.title }}</b>
+                    <p>{{ post.excerpt }}</p>
+                    <a href="{{ post.url }}">
+                    <div class="w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey" style="width:100%">
+                        View Post
+                    </div>
+                    </a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
         </div>
     </div>
     <div class="w3-col w3-half"> 
         <div class="w3-margin w3-card w3-padding w3-white">
-            <div class="w3-center w3-bottombar w3-topbar w3-border-deep-purple">
+            <div class="w3-center w3-bottombar w3-topbar w3-border-black">
                 <h3>Projects</h3>
             </div>
-            <div>
-                <ul class="w3-ul w3-hoverable" id="ProjectsList">
-                    {% for post in site.posts %}
-                    {% if post.category == "Project" %}
-                    <li>
-                        <b><a href="{{ post.url }}">{{ post.title }}</a></b>
-                        <p>{{ post.excerpt }}</p>
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
+            <ul class="w3-ul" id="ProjectsList">
+                {% for post in site.posts %}
+                {% if post.category == "Project" %}
+                <li>
+                    <b>{{ post.title }}</b>
+                    <p>{{ post.excerpt }}</p>
+                    <a href="{{ post.url }}">
+                    <div class="w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey" style="width:100%">
+                        View Project
+                    </div>
+                    </a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
         </div>
     </div>
+</div>
 </div>
 
 <script src="/data/scripts/BlogSearch.js" type="text/javascript"></script>
