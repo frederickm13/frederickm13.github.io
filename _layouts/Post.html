@@ -4,10 +4,17 @@ layout: Base
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
     <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a class="w3-bar-item w3-right w3-hide-large" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
         <a href="/" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge"><b>ErickMcCollum</b>.com</a>
-        <a href="/blog/" class="w3-right w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge w3-hide-small">All Posts & Projects</a>
-        <a href="/blog/" class="w3-right w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge w3-hide-large w3-hide-medium">Back</a>
-        </div>
+        <a href="/" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge w3-right w3-hide-small w3-hide-medium">All Posts & Projects</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large">
+        <a href="/" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+        <a href="/blog/" class="w3-bar-item w3-button" onclick="toggleFunction()">ALL POSTS & PROJECTS</a>
     </div>
 </div>
 
@@ -40,3 +47,15 @@ layout: Base
     </div>
 </div>
 </div>
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
