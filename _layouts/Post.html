@@ -33,24 +33,37 @@ layout: Base
     <hr> 
     <div class="w3-row">
         {% if page.downloadable == 1 %}
-        <a href="{{ page.docurl }}">
-        <div class="w3-col m6 w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey">
-            <p><i class="fas fa-file-pdf"></i> View PDF File</p>
-        </div>
-        </a>
+            <a href="{{ page.docurl }}">
+            <div class="w3-col m6 w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey">
+                <p><i class="fas fa-file-pdf"></i> View PDF File</p>
+            </div>
+            </a>
+            <a href="{{ page.sourceurl }}">
+            <div class="w3-col m6 w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey">
+                <p>
+                    {% if page.category == "Project" %}
+                    View on GitHub
+                    {% endif %}
+                    {% if page.category == "Post" %}
+                    View, Like, or Comment on LinkedIn
+                    {% endif %}
+                </p>
+            </div>
+            </a>
+        {% else %}
+            <a href="{{ page.sourceurl }}">
+            <div class="w3-col w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey">
+                <p>
+                    {% if page.category == "Project" %}
+                    View on GitHub
+                    {% endif %}
+                    {% if page.category == "Post" %}
+                    View, Like, or Comment on LinkedIn
+                    {% endif %}
+                </p>
+            </div>
+            </a>
         {% endif %}
-        <a href="{{ page.sourceurl }}">
-        <div class="w3-col m6 w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey">
-            <p>
-                {% if page.category == "Project" %}
-                View on GitHub
-                {% endif %}
-                {% if page.category == "Post" %}
-                View, Like, or Comment on LinkedIn
-                {% endif %}
-            </p>
-        </div>
-        </a>
     </div>
 </div>
 </div>
