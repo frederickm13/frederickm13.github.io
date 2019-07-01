@@ -8,7 +8,7 @@ layout: Base
             <i class="fa fa-bars"></i>
         </a>
         <a href="/" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge"><b>ErickMcCollum</b>.com</a>
-        <a href="/" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge w3-right w3-hide-small w3-hide-medium">All Posts & Projects</a>
+        <a href="/blog/" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge w3-right w3-hide-small w3-hide-medium">All Posts & Projects</a>
     </div>
 
     <!-- Navbar on small screens -->
@@ -32,14 +32,21 @@ layout: Base
     {{ content }}
     <hr> 
     <div class="w3-row">
+        {% if page.downloadable == 1 %}
+        <a href="{{ page.docurl }}">
+        <div class="w3-col m6 w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey">
+            <p><i class="fas fa-file-pdf"></i> View PDF File</p>
+        </div>
+        </a>
+        {% endif %}
         <a href="{{ page.sourceurl }}">
-        <div class="w3-col w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey">
+        <div class="w3-col m6 w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey">
             <p>
                 {% if page.category == "Project" %}
-                <b>View on GitHub</b>
+                View on GitHub
                 {% endif %}
                 {% if page.category == "Post" %}
-                <b>View, Like, or Comment on LinkedIn</b>
+                View, Like, or Comment on LinkedIn
                 {% endif %}
             </p>
         </div>
