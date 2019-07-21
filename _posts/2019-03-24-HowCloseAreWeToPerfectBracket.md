@@ -1,5 +1,5 @@
 ---
-title: How close are we to a perfect NCAA Tournament Bracket?
+title: How Close Are We to a Perfect NCAA Tournament Bracket?
 author: Erick McCollum
 layout: Post
 date:  2019-03-24 -0600
