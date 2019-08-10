@@ -10,9 +10,9 @@ layout: Base
         <a href="#home" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge"><b>ErickMcCollum</b>.com</a>
         <!-- Float links to the right. Hide them on small screens -->
         <div class="w3-right w3-hide-small w3-hide-medium">
-        <a href="#projects" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">Posts & Projects</a>
-        <a href="#about" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">About</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">Contact</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">Posts & Projects</a>
+            <a href="#about" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">About</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">Contact</a>
         </div>
     </div>
 
@@ -33,87 +33,96 @@ layout: Base
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1500px">
 
-<!-- Project Section -->
-<div class="w3-container w3-padding-32 w3-card w3-margin w3-white" id="projects">
-    <div class="w3-border-bottom w3-border-grey w3-padding-16">
-    <h2>Featured Posts & Projects</h2>
+    <!-- Project Section -->
+    <div class="w3-container w3-padding-32 w3-card w3-margin w3-white" id="projects">
+        <h2 class="w3-border-bottom w3-border-grey w3-padding-16">Featured Posts & Projects</h2>
+        {% for post in site.posts %}
+            {% if post.featured == 1 %}
+                {% assign post_1 = post %}
+            {% endif %}
+            {% if post.featured == 2 %}
+                {% assign post_2 = post %}
+            {% endif %}
+            {% if post.featured == 3 %}
+                {% assign post_3 = post %}
+            {% endif %}
+            {% if post.featured == 4 %}
+                {% assign post_4 = post %}
+            {% endif %}
+        {% endfor %}
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <a href="{{ post_1.url }}" class="w3-hover-text-grey"><h4>{{ post_1.title }}</h4></a>
+                <p>{{ post_1.excerpt }}</p>
+            </div>
+            <div class="w3-col m6">
+                <a href="{{ post_2.url }}" class="w3-hover-text-grey"><h4>{{ post_2.title }}</h4></a>
+                <p>{{ post_2.excerpt }}</p>
+            </div>
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-col w3-border-grey m6">
+                <a href="{{ post_3.url }}" class="w3-hover-text-grey"><h4>{{ post_3.title }}</h4></a>
+                <p>{{ post_3.excerpt }}</p>
+            </div>
+            <div class="w3-col m6">
+                <a href="{{ post_4.url }}" class="w3-hover-text-grey"><h4>{{ post_4.title }}</h4></a>
+                <p>{{ post_4.excerpt }}</p>
+            </div>
+        </div>
+        
+        <br>
+        <div class="w3-center">
+            <a href="/blog/" class="w3-button w3-border w3-border-grey w3-light-grey w3-round-xlarge w3-hover-border-light-grey w3-block">View All</a>
+        </div>
     </div>
-    {% for post in site.posts %}
-        {% if post.featured == 1 %}
-            {% assign post_1 = post %}
-        {% endif %}
-        {% if post.featured == 2 %}
-            {% assign post_2 = post %}
-        {% endif %}
-        {% if post.featured == 3 %}
-            {% assign post_3 = post %}
-        {% endif %}
-        {% if post.featured == 4 %}
-            {% assign post_4 = post %}
-        {% endif %}
-    {% endfor %}
-    <div class="w3-row-padding">
-        <div class="w3-col m6">
-            <a href="{{ post_1.url }}"><h3>{{ post_1.title }}</h3></a>
-            <p>{{ post_1.excerpt }}</p>
-        </div>
-        <div class="w3-col m6">
-            <a href="{{ post_2.url }}"><h3>{{ post_2.title }}</h3></a>
-            <p>{{ post_2.excerpt }}</p>
-        </div>
-    </div>
-    <div class="w3-row-padding">
-        <div class="w3-col w3-border-grey m6">
-            <a href="{{ post_3.url }}"><h3>{{ post_3.title }}</h3></a>
-            <p>{{ post_3.excerpt }}</p>
-        </div>
-        <div class="w3-col m6">
-            <a href="{{ post_4.url }}"><h3>{{ post_4.title }}</h3></a>
-            <p>{{ post_4.excerpt }}</p>
-        </div>
-    </div>
-    
-    <br>
-    <a href="/blog/"><div class="w3-center w3-button w3-border w3-border-grey w3-round-xlarge w3-hover-border-light-grey" style="width:100%"><p>View All</p></div></a>
-</div>
 
-<!-- About Section -->
-<div class="w3-container w3-padding-32 w3-card w3-margin w3-white" id="about">
-    <h2 class="w3-border-bottom w3-border-grey w3-padding-16">About</h2>
-    <div class="w3-row-padding">
-    <div class="w3-col w3-center l4">
-        <img class="w3-image w3-round" src="/data/images/profileheadshot.png" alt="Profile picture." style="width:100%;max-width:400px">
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32 w3-card w3-margin w3-white" id="about">
+        <h2 class="w3-border-bottom w3-border-grey w3-padding-16">About</h2>
+        <div class="w3-row-padding">
+            <div class="w3-col w3-center l4">
+                <img class="w3-image w3-round" src="/data/images/profileheadshot.png" alt="Profile picture." style="width:100%;max-width:400px">
+            </div>
+            <div class="w3-col l8">
+                {{ content }}
+                <div class="w3-center">
+                    <a href="https://www.linkedin.com/in/erick-mccollum" class="w3-button w3-border w3-border-grey w3-light-grey w3-round-xlarge w3-hover-border-light-grey w3-block">View LinkedIn</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="w3-col l8">
-        {{ content }}
-    </div>
-    </div>
-</div>
 
-<!-- Contact Section -->
-<div class="w3-container w3-padding-32 w3-card w3-margin w3-white" id="contact">
-    <h2 class="w3-border-bottom w3-border-grey w3-padding-16">Contact</h2>
-    <div class="w3-row-padding">
-    <a href="https://www.linkedin.com/in/erick-mccollum">
-        <div class="w3-col s4 w3-button w3-border w3-border-white w3-round-xlarge">
-        <i class="fab fa-linkedin fa-3x"></i>
-        <p>LinkedIn</p>
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-32 w3-card w3-margin w3-white" id="contact">
+        <h2 class="w3-border-bottom w3-border-grey w3-padding-16">Contact</h2>
+        <div class="w3-row-padding">
+        <a href="https://www.linkedin.com/in/erick-mccollum">
+            <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
+            <i class="fab fa-linkedin fa-3x"></i>
+            <p>LinkedIn</p>
+            </div>
+        </a>
+        <a href="https://github.com/frederickm13">
+            <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
+            <i class="fab fa-github-square fa-3x"></i>
+            <p>GitHub</p>
+            </div>
+        </a>
+        <a href="mailto:fgmccollum4@gmail.com">
+            <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
+            <i class="fas fa-envelope-square fa-3x"></i>
+            <p>Email</p>
+            </div>
+        </a>
+        <a href="https://www.facebook.com/erick.mccollum">
+            <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
+            <i class="fab fa-facebook-square fa-3x"></i>
+            <p>Facebook</p>
+            </div>
+        </a>
         </div>
-    </a>
-    <a href="https://github.com/frederickm13">
-        <div class="w3-col s4 w3-button w3-border w3-border-white w3-round-xlarge">
-        <i class="fab fa-github-square fa-3x"></i>
-        <p>GitHub</p>
-        </div>
-    </a>
-    <a href="mailto:fgmccollum4@gmail.com">
-        <div class="w3-col s4 w3-button w3-border w3-border-white w3-round-xlarge">
-        <i class="fas fa-envelope-square fa-3x"></i>
-        <p>Email</p>
-        </div>
-    </a>
     </div>
-</div>
 
 <!-- End page content -->
 </div>

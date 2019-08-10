@@ -8,4 +8,4 @@ category: Project
 featured: 0
 ---
 
-Graphical Windows application for splitting CSV files..
+Graphical Windows application for splitting CSV files.
