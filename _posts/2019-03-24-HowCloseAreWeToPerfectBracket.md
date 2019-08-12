@@ -5,7 +5,7 @@ layout: Post
 date:  2019-03-24 -0600
 sourceurl: https://www.linkedin.com/pulse/how-close-we-perfect-ncaa-tournament-bracket-mccollum/
 category: Post
-featured: 2
+featured: 4
 ---
 
 It's *[March Madness](https://www.ncaa.com/march-madness)* time! In the excitement of the annual tournament, I decided to do some research and write a fun article for all you bracket-builders out there.
@@ -24,13 +24,13 @@ Now, I know what you are thinking: "Those odds are only if you don't know anythi
 
 Even with the rise of AI and machine learning in the technology world, we are not getting any closer to creating a perfect bracket. The following graph shows the average user's *NCAA Tournament* bracket score over the past eight years according to *[NCAA.com](https://www.ncaa.com/news/basketball-men/2019-02-27/march-madness-how-do-your-past-brackets-stack-competition)* (192 is a perfect score):
 
-<img src="/data/images/NcaaTourneyGraph.PNG" class="w3-round w3-image" style="width:100%;max-width:1500px">
+<img src="/data/images/NcaaTourneyGraph.PNG" class="w3-round w3-image" style="width:100%">
 
 As one can see above, we have not improved as a whole over the past eight years. This sporting event is just that unpredictable. Also, with the increasing impact of the three pointer in the game of basketball, one could argue that the tournament will become even more unpredictable moving forward.
 
 The current record number of correct games picked in a row in an NCAA bracket, as reported by *[NCAA.com](https://www.ncaa.com/news/basketball-men/bracketiq/2018-03-24/longest-we-believe-ncaa-bracket-has-ever-stayed-perfect)*, is 39 games. While this is impressive, it is still not even a perfect bracket through the first two rounds (48 games). Since visual aids always help, the below graph shows the discrepancy between the current record number of games picked correctly and the end goal of a perfect bracket:
 
-<img src="/data/images/NcaaRecord.PNG" class="w3-round w3-image" style="width:100%;max-width:1500px">
+<img src="/data/images/NcaaRecord.PNG" class="w3-round w3-image" style="width:100%">
 
 Even with all this data suggesting otherwise, we still create brackets every year in hopes of having the first perfect bracket, including myself. In reality, there may never be a perfect *NCAA Tournament* bracket, but that does not make it any less fun to try. The impossibly low odds present a challenge that everyone can be interested in, and the fact that it has never been achieved makes it so much more enjoyable. There is something oddly amusing about talking to friends, family, and co-workers about how bad our busted brackets are each year. In the end, who knows? The odds may be ridiculous, but there is still technically a chance, I can't deny that. So why not keep trying every year? I know that I will.
 
