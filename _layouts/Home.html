@@ -2,27 +2,7 @@
 layout: Base
 ---
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a class="w3-bar-item w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a href="#home" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge"><b>ErickMcCollum</b>.com</a>
-        <!-- Float links to the right. Hide them on small screens -->
-        <div class="w3-right w3-hide-small w3-hide-medium">
-            <a href="#projects" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">Posts & Projects</a>
-            <a href="#about" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">About</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">Contact</a>
-        </div>
-    </div>
-
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large">
-        <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">POSTS & PROJECTS</a>
-        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    </div>
-</div>
+{% include navbar.html %}
 
 <!-- Header -->
 <header class="w3-content" style="max-width:1500px;" id="home">
@@ -86,8 +66,13 @@ layout: Base
             </div>
             <div class="w3-col l8">
                 {{ content }}
-                <div class="w3-center">
-                    <a href="https://www.linkedin.com/in/erick-mccollum" class="w3-button w3-border w3-border-grey w3-light-grey w3-round-xlarge w3-hover-border-light-grey w3-block">View LinkedIn</a>
+                <div class="w3-center w3-row-padding">
+                    <div class="w3-col m6">
+                        <a href="https://www.linkedin.com/in/erick-mccollum" class="w3-button w3-border w3-border-grey w3-light-grey w3-round-xlarge w3-hover-border-light-grey w3-block"><i class="fab fa-linkedin"></i> View LinkedIn</a>
+                    </div>
+                    <div class="w3-col m6">
+                        <a href="/data/files/FM_Resume.pdf" class="w3-button w3-border w3-border-grey w3-light-grey w3-round-xlarge w3-hover-border-light-grey w3-block"><i class="fas fa-file-pdf"></i> View Resume</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,44 +82,32 @@ layout: Base
     <div class="w3-container w3-padding-32 w3-card w3-margin w3-white" id="contact">
         <h2 class="w3-border-bottom w3-border-grey w3-padding-16">Contact</h2>
         <div class="w3-row-padding">
-        <a href="https://www.linkedin.com/in/erick-mccollum">
-            <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
-            <i class="fab fa-linkedin fa-3x"></i>
-            <p>LinkedIn</p>
-            </div>
-        </a>
-        <a href="https://github.com/frederickm13">
-            <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
-            <i class="fab fa-github-square fa-3x"></i>
-            <p>GitHub</p>
-            </div>
-        </a>
-        <a href="mailto:fgmccollum4@gmail.com">
-            <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
-            <i class="fas fa-envelope-square fa-3x"></i>
-            <p>Email</p>
-            </div>
-        </a>
-        <a href="https://www.facebook.com/erick.mccollum">
-            <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
-            <i class="fab fa-facebook-square fa-3x"></i>
-            <p>Facebook</p>
-            </div>
-        </a>
+            <a href="https://www.linkedin.com/in/erick-mccollum">
+                <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                    <p>LinkedIn</p>
+                </div>
+            </a>
+            <a href="https://github.com/frederickm13">
+                <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
+                    <i class="fab fa-github-square fa-3x"></i>
+                    <p>GitHub</p>
+                </div>
+            </a>
+            <a href="mailto:fgmccollum4@gmail.com">
+                <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
+                    <i class="fas fa-envelope-square fa-3x"></i>
+                    <p>Email</p>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/erick.mccollum">
+                <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
+                    <i class="fab fa-facebook-square fa-3x"></i>
+                    <p>Facebook</p>
+                </div>
+            </a>
         </div>
     </div>
 
 <!-- End page content -->
 </div>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>

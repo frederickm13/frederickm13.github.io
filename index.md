@@ -1,5 +1,5 @@
 ---
-title: Welcome to Erick's Blog
+title: Home
 layout: Home
 ---
 

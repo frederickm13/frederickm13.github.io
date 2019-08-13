@@ -29,7 +29,7 @@ While the three point shot has become increasingly more popular, it is interesti
 
 With all of this data showing how popular the three point shot has become, what can we expect in the near future? The short answer to this question is simple: most likely more of the same.
 
-I have created an ARIMA forecasting model using the programming language R. For those of you interested in reading more on ARIMA models and how they work, this [Wikipedia](https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average) link is helpful. However, all that you need to know for this article is that ARIMA is a mathematical model used to forecast and predict data. Using this ARIMA model, one can see that the number of made three pointers is expected to continue increasing over the next five seasons:
+I have created an ARIMA forecasting model using the programming language R. For those of you interested in reading more on ARIMA models and how they work, this [Wikipedia](https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average) link is helpful. However, all that you need to know for this article is that ARIMA is a mathematical model used to forecast and predict data. Using this ARIMA model, one can see that the number of three pointers made is expected to continue increasing over the next five seasons:
 
 <img src="/data/images/ForecastThreePointers.png" class="w3-round w3-image" style="width:100%">
 
