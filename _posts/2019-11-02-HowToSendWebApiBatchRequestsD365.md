@@ -94,6 +94,8 @@ Finally, I will feed these account entity objects into the constructor function,
     batchRequest.sendRequest();
 ```
 
+The full code used in this example may be found in my *[GitHub](https://github.com/)* repository at the following link: [WebApiBatch Sample Code](https://github.com/frederickm13/D365_Samples/WebApiBatch)
+
 ### Resources
 For additional information and guidance, please see the following resources:
 - Official *[Microsoft](https://careers.microsoft.com/us/en/)* documentation: [Execute batch operations using the Web API](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/webapi/execute-batch-operations-using-web-api)
