@@ -5,7 +5,7 @@ layout: Post
 date:  2019-03-24 -0600
 sourceurl: https://www.linkedin.com/pulse/how-close-we-perfect-ncaa-tournament-bracket-mccollum/
 category: Post
-featured: 4
+featured: 0
 ---
 
 It's *[March Madness](https://www.ncaa.com/march-madness)* time! In the excitement of the annual tournament, I decided to do some research and write a fun article for all you bracket-builders out there.

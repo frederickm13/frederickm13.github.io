@@ -6,7 +6,7 @@ date:  2019-03-16 -0600
 sourceurl: https://www.linkedin.com/feed/update/urn:li:activity:6551266040465154048
 docurl: /data/files/MoviesBoxOfficeAnalysisReport.pdf
 category: Post
-featured: 2
+featured: 3
 downloadable: 1
 ---
 
