@@ -94,7 +94,7 @@ Finally, I will feed these account entity objects into the constructor function,
     batchRequest.sendRequest();
 ```
 
-The full code used in this example may be found in my *[GitHub](https://github.com/)* repository at the following link: [WebApiBatch Sample Code](https://github.com/frederickm13/D365_Samples/WebApiBatch)
+The full code used in this example may be found in my *[GitHub](https://github.com/)* repository at the following link: [WebApiBatch Sample Code](https://github.com/frederickm13/D365_Samples/tree/master/WebApiBatch)
 
 ### Resources
 For additional information and guidance, please see the following resources:
