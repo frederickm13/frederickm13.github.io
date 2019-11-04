@@ -32,7 +32,7 @@ First, I will create a constructor function to make it easier to create and send
 
 ```javascript
     function BatchPostAccounts() {
-        this.apiUrl = Xrm.Utility.getGlobalContext().getClientUrl() + "api/data/v9.1/";
+        this.apiUrl = Xrm.Utility.getGlobalContext().getClientUrl() + "/api/data/v9.1/";
         this.uniqueId = "batch_" + (new Date().getTime());
         this.batchItemHeader = "--" + 
             this.uniqueId + 
@@ -52,6 +52,7 @@ First, I will create a constructor function to make it easier to create and send
     BatchPostAccounts.prototype.sendRequest = function() {
         this.content.push("");
         this.content.push("--" + this.uniqueId + "--");
+        this.content.push(" ");
 
         var xhr = new XMLHttpRequest();
         xhr.open("POST", encodeURI(this.apiUrl + "$batch"));
@@ -67,6 +68,8 @@ First, I will create a constructor function to make it easier to create and send
         xhr.send(this.content.join("\n"));
     }
 ```
+
+*Please note, the additional empty space after the batch closing tag (line #21 above) is important for formatting issues. The server may return an "invalid JSON" error response if a trailing space is not included in the batch request body.*
 
 Next, I will create three account entity objects in JSON:
 
