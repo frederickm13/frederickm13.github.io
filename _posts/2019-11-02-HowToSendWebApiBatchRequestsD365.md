@@ -19,7 +19,7 @@ The more efficient, and more performant, option would be to send a Web API batch
 
 There are many benefits to performing Web API operations using a batch request. I have outlined a few below:
 - Better Performance: Sending multiple operations in one batch request reduces the number of HTTP requests that need to be sent from the client. This means better application performance. 
-- More Efficient: Similar to the above point, reducing the number of HTTP requests that are sent means that there are more resources available for the client to use. This increase in efficency will have a positive effect.
+- More Efficient: Similar to the above point, reducing the number of HTTP requests that are sent means that there are more resources available for the client to use. This increase in efficiency will have a positive effect.
 - Transactional Nature: Web API batch requests can be configured to act as a single transaction by using change sets. This means that if one request fails, they all will fail. This can be useful in certain situations. I won't go into detail regarding change sets in this article. However, you can find more information at the official *[Microsoft](https://microsoft.com/us/en/)* documentation: [Change sets](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/webapi/execute-batch-operations-using-web-api#change-sets)
 
 ### Okay, I am interested, but how do I do it?
