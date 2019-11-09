@@ -1,5 +1,5 @@
 ---
-title: CSV Statistics
+title: CSV Statistics Application
 author: Erick McCollum
 layout: Post
 date:  2019-01-25 -0600
