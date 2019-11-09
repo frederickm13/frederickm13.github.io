@@ -43,4 +43,4 @@ Based on the projected values of this forecast model, it will be interesting to 
 
 Thanks for taking the time to read!
 
-*The R source code and data set used for this article may be found on my GitHub Profile. This data set was created using data from https://www.basketball-reference.com and the [National Basketball Association](https://www.nba.com/). I do not claim ownership of any data included in this data set.*
+*The R source code and data set used for this article may be found on my [GitHub Profile](https://github.com/frederickm13/Blog_Shared/tree/master/ForecastingNbaThreePointers). This data set was created using data from https://www.basketball-reference.com and the [National Basketball Association](https://www.nba.com/). I do not claim ownership of any data included in this data set.*
