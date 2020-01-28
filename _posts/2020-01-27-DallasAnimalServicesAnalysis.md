@@ -1,0 +1,17 @@
+---
+title: Analysis of Dallas Animal Services Data
+author: Erick McCollum
+layout: Post
+date:  2020-01-27 -0600
+sourceurl: https://www.linkedin.com/posts/erick-mccollum_analysis-of-dallas-animal-services-data-activity-6627729700913500160-5SPX
+docurl: /data/files/DallasAnimalServicesAnalysis.pdf
+category: Post
+featured: 4
+downloadable: 1
+---
+
+I would like to share one of my recently completed projects as a student in the Master of Science in Business Analytics program at [The University of Dallas](https://udallas.edu/). This project is an in-depth analysis of Dallas Animal Services data using modern cloud technologies. 
+
+Some of the technologies that I utilized in this analysis include SQL, Microsoft Azure, Power BI, Azure SQL Data Warehouse, SQL Server Management Studio, and Azure Blob Storage.
+
+*Please note, any opinions stated in this report are that of my own, and are not associated in any way with another person or organization.*

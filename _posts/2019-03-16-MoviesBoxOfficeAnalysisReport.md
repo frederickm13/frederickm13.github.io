@@ -10,7 +10,7 @@ featured: 3
 downloadable: 1
 ---
 
-I wanted to share one of my analytical research reports that was written during my time as a student in The University of Dallas' Master of Science in Business Analytics program. Please let me know if you enjoy it, and feel free to share any feedback on LinkedIn, it is much appreciated.
+I wanted to share one of my analytical research reports that was written during my time as a student in [The University of Dallas](https://udallas.edu/)' Master of Science in Business Analytics program. Please let me know if you enjoy it, and feel free to share any feedback on LinkedIn, it is much appreciated.
 
 To view the report, please use the "View PDF File" button below. This will open the report in your browser to read and/or download if you wish.
 

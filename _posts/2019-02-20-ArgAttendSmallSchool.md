@@ -5,7 +5,7 @@ layout: Post
 date:  2019-02-20 -0600
 sourceurl: https://www.linkedin.com/pulse/argument-attending-smaller-university-frederick-erick-mccollum/
 category: Post
-featured: 4
+featured: 0
 ---
 
 I enjoyed my time at Schreiner University so much, that I decided to author an article containing my argument for attending a smaller unversity. Please take a moment to read, and feel free to like or comment on LinkedIn!
