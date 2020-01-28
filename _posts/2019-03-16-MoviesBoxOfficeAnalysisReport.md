@@ -3,7 +3,7 @@ title: What Factors Influence Net Revenue and Return on Investment of Movies at 
 author: Erick McCollum
 layout: Post
 date:  2019-03-16 -0600
-sourceurl: https://www.linkedin.com/feed/update/urn:li:activity:6551266040465154048
+sourceurl: https://www.linkedin.com/posts/erick-mccollum_analysis-of-movie-performance-at-the-box-activity-6551266040465154048-Yf4D
 docurl: /data/files/MoviesBoxOfficeAnalysisReport.pdf
 category: Post
 featured: 3
