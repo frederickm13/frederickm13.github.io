@@ -11,7 +11,7 @@ function setHash(event) {
 function searchPosts(event) 
 {
     console.log("searching");
-    var inputFilter = decodeURI(window.location.hash).replace("#", "");
+    var inputFilter = decodeURI(window.location.hash).replace("#", "").toLowerCase();
     postList = document.getElementById("PostsList");
     post_li = postList.getElementsByTagName("li");
 
