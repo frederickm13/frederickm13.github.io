@@ -7,50 +7,32 @@ title: ErickMcCollum.com |
 
 <div class="w3-padding-48">
     <!-- Page content -->
-    <div class="w3-content w3-padding-large" style="max-width:1500px">
+    <div class="w3-content w3-padding" style="max-width:1500px">
 
-        <header class="w3-container w3-margin w3-padding-32 w3-card w3-white ">
+        <div class="w3-container w3-padding-32 w3-card w3-white ">
             <h1 class="w3-center">{{ page.title }}</h1> 
-            <div class="w3-padding">
-                <input class="w3-input w3-border w3-round-xlarge w3-border-grey" type="text" placeholder="Search all posts and projects..." id="searchInput" onkeyup="searchPosts()">
+            <div class="w3-row">
+                <div class="w3-col s10 m11">
+                    <input class="w3-input w3-border w3-round w3-border-grey" type="text" placeholder="Search all posts and projects..." id="searchInput" onkeyup="triggerSearch(event)">
+                </div>
+                <div class="w3-col s2 m1 w3-button w3-border w3-round w3-border-grey w3-block" id="searchButton" onclick="setHash(event)">
+                    <i class="fas fa-search"></i>
+                </div>
             </div>
-        </header>
+        </div>
 
-        <div class="w3-row">
-            <div class="w3-col w3-half"> 
-                <div class="w3-margin w3-padding w3-card w3-white">
-                    <div class="w3-center w3-bottombar w3-topbar w3-border-grey">
-                        <h3>Posts</h3>
+        <div class="w3-container w3-section w3-padding w3-card w3-white">
+            <ul class="w3-ul" id="PostsList">
+                {% for post in site.posts %}
+                <li>
+                    <div class="w3-row">
+                        <a href="{{ post.url }}" class="w3-hover-text-grey w3-threequarter"><h4>{{ post.title }}</h4></a>
+                        <i class="w3-quarter">{{ post.date | date_to_string: "ordinal", "US" }}</i>
                     </div>
-                    <ul class="w3-ul" id="PostsList">
-                        {% for post in site.posts %}
-                        {% if post.category == "Post" %}
-                        <li>
-                            <a href="{{ post.url }}" class="w3-hover-text-grey"><h4>{{ post.title }}</h4></a>
-                            <p>{{ post.excerpt }}</p>
-                        </li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            <div class="w3-col w3-half"> 
-                <div class="w3-margin w3-card w3-padding w3-white">
-                    <div class="w3-center w3-bottombar w3-topbar w3-border-grey">
-                        <h3>Projects</h3>
-                    </div>
-                    <ul class="w3-ul" id="ProjectsList">
-                        {% for post in site.posts %}
-                        {% if post.category == "Project" %}
-                        <li>
-                            <a href="{{ post.url }}" class="w3-hover-text-grey"><h4>{{ post.title }}</h4></a>
-                            <p>{{ post.excerpt }}</p>
-                        </li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
+                    <p>{{ post.excerpt }}</p>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </div>
