@@ -6,7 +6,7 @@ date:  2019-03-16 -0600
 sourceurl: https://www.linkedin.com/posts/erick-mccollum_analysis-of-movie-performance-at-the-box-activity-6551266040465154048-Yf4D
 docurl: /data/files/MoviesBoxOfficeAnalysisReport.pdf
 category: Post
-featured: 3
+featured: 0
 downloadable: 1
 ---
 
