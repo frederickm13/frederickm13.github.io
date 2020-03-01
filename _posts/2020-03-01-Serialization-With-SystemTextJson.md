@@ -3,7 +3,7 @@ title: Comparing the Performance of System.Text.Json and Newtonsoft.Json in .NET
 author: Erick McCollum
 layout: Post
 date:  2020-03-01 -0600
-sourceurl: 
+sourceurl: https://www.linkedin.com/pulse/comparing-performance-systemtextjson-newtonsoftjson-net-mccollum
 category: Post
 featured: 3
 excerpt: Are you curious about the performance of the new System.Text.Json API in .NET? 
