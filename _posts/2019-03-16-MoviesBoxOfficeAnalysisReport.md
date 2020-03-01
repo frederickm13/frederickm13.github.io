@@ -10,6 +10,8 @@ featured: 0
 downloadable: 1
 ---
 
+*DISCLAIMER: Any personal opinions stated on this page are solely my own. This article is provided "as-is," without warranty of any kind. I do not claim ownership of any third-party information used in this article.*
+
 I wanted to share one of my analytical research reports that was written during my time as a student in [The University of Dallas](https://udallas.edu/)' Master of Science in Business Analytics program. Please let me know if you enjoy it, and feel free to share any feedback on LinkedIn, it is much appreciated.
 
 To view the report, please use the "View PDF File" button below. This will open the report in your browser to read and/or download if you wish.

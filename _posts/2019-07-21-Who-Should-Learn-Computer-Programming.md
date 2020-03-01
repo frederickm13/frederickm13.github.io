@@ -9,7 +9,7 @@ featured: 0
 excerpt: In an increasingly technological world, you may find yourself wondering if it would be beneficial for you to learn some computer programming. In fact even if you have never thought about it, I would guess that you are at least somewhat interested. After all, you have read this far.
 ---
 
-*DISCLAIMER: All personal opinions stated on this page are solely my own. I do not claim ownership of any data or facts used in this article, nor do I provide any legally binding guarantee or warranty based on the information presented.*
+*DISCLAIMER: Any personal opinions stated on this page are solely my own. This article is provided "as-is," without warranty of any kind. I do not claim ownership of any third-party information used in this article.*
 
 In an increasingly technological world, you may find yourself wondering if it would be beneficial for you to learn some computer programming. In fact even if you have never thought about it, I would guess that you are at least somewhat interested. After all, you have read this far. Personally, I believe that it would be beneficial for anyone to learn the basics of computer programming. Yes, I said anyone. Whether you intend to pursue a career in technology or not, there are positive aspects to learning this somewhat mystical skill that can prove advantageous to all.
 

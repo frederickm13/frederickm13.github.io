@@ -9,7 +9,7 @@ featured: 2
 excerpt: The NBA is changing. This is very evident when viewing the growing impact of the three point shot in basketball.
 ---
 
-*DISCLAIMER: All personal opinions stated on this page are solely my own. I do not claim ownership of any data or facts used in this article, nor do I provide any legally binding guarantee or warranty based on the information presented.*
+*DISCLAIMER: Any personal opinions stated on this page are solely my own. This article is provided "as-is," without warranty of any kind. I do not claim ownership of any third-party information used in this article.*
 
 The *[NBA](https://www.nba.com/)* is changing.
 

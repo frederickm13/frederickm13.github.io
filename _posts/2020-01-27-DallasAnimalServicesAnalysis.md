@@ -10,6 +10,8 @@ featured: 4
 downloadable: 1
 ---
 
+*DISCLAIMER: Any personal opinions stated on this page are solely my own. This article is provided "as-is," without warranty of any kind. I do not claim ownership of any third-party information used in this article.*
+
 I would like to share one of my recently completed projects as a student in the Master of Science in Business Analytics program at [The University of Dallas](https://udallas.edu/). This project is an in-depth analysis of Dallas Animal Services data using modern cloud technologies. 
 
 Some of the technologies that I utilized in this analysis include SQL, Microsoft Azure, Power BI, Azure SQL Data Warehouse, SQL Server Management Studio, and Azure Blob Storage.
