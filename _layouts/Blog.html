@@ -21,15 +21,12 @@ title: ErickMcCollum.com |
             </div>
         </div>
 
-        <div class="w3-container w3-section w3-padding w3-card w3-white">
+        <div class="w3-container w3-section w3-card w3-white">
             <ul class="w3-ul" id="PostsList">
                 {% for post in site.posts %}
                 <li>
-                    <div class="w3-row">
-                        <a href="{{ post.url }}" class="w3-hover-text-grey w3-threequarter"><h4>{{ post.title }}</h4></a>
-                        <i class="w3-quarter">{{ post.date | date_to_string: "ordinal", "US" }}</i>
-                    </div>
-                    <p>{{ post.excerpt }}</p>
+                        <h5><a href="{{ post.url }}" class="w3-hover-text-grey">{{ post.title }}</a> (<i>{{ post.date | date_to_string: "ordinal", "US" }}</i>)</h5>
+                    <p class="w3-text-dark-grey">{{ post.excerpt }}</p>
                 </li>
                 {% endfor %}
             </ul>

@@ -14,49 +14,20 @@ layout: Base
 
     <!-- Project Section -->
     <div class="w3-container w3-section w3-padding-32 w3-card w3-white" id="projects">
-        <h2 class="w3-border-bottom w3-border-grey w3-padding-16">Featured from Blog</h2>
-        {% for post in site.posts %}
-            {% if post.featured == 1 %}
-                {% assign post_1 = post %}
-            {% endif %}
-            {% if post.featured == 2 %}
-                {% assign post_2 = post %}
-            {% endif %}
-            {% if post.featured == 3 %}
-                {% assign post_3 = post %}
-            {% endif %}
-            {% if post.featured == 4 %}
-                {% assign post_4 = post %}
-            {% endif %}
+        <h2 class="w3-border-bottom w3-border-grey w3-padding-16">Recent Posts</h2>
+        <ul class="w3-ul" id="RecentPostsList">
+        {% for post in site.posts limit:4 %}
+            <li>
+                <h5><a href="{{ post.url }}" class="w3-hover-text-grey">{{ post.title }}</a> (<i>{{ post.date | date_to_string: "ordinal", "US" }}</i>)</h5>
+                <p class="w3-text-dark-grey">{{ post.excerpt }}</p>
+            </li>
         {% endfor %}
-        <div class="w3-row-padding">
-            <div class="w3-col m6">
-                <a href="{{ post_1.url }}" class="w3-hover-text-grey"><h4>{{ post_1.title }}</h4></a>
-                <i>{{ post_1.date | date_to_string: "ordinal", "US" }}</i>
-                <p>{{ post_1.excerpt }}</p>
-            </div>
-            <div class="w3-col m6">
-                <a href="{{ post_2.url }}" class="w3-hover-text-grey"><h4>{{ post_2.title }}</h4></a>
-                <i>{{ post_2.date | date_to_string: "ordinal", "US" }}</i>
-                <p>{{ post_2.excerpt }}</p>
-            </div>
-        </div>
-        <div class="w3-row-padding">
-            <div class="w3-col w3-border-grey m6">
-                <a href="{{ post_3.url }}" class="w3-hover-text-grey"><h4>{{ post_3.title }}</h4></a>
-                <i>{{ post_3.date | date_to_string: "ordinal", "US" }}</i>
-                <p>{{ post_3.excerpt }}</p>
-            </div>
-            <div class="w3-col m6">
-                <a href="{{ post_4.url }}" class="w3-hover-text-grey"><h4>{{ post_4.title }}</h4></a>
-                <i>{{ post_4.date | date_to_string: "ordinal", "US" }}</i>
-                <p>{{ post_4.excerpt }}</p>
-            </div>
-        </div>
-        
+        </ul>
         <hr>
-        <div class="w3-center w3-section">
-            <a href="/blog/" class="w3-button w3-border w3-border-grey w3-light-grey w3-round-xlarge w3-hover-border-light-grey w3-block">View All</a>
+        <div class="w3-center w3-row-padding">
+            <div class="w3-col w3-section">
+                <a href="/blog/" class="w3-button w3-border w3-border-grey w3-light-grey w3-round-xlarge w3-hover-border-light-grey w3-block">View All</a>
+            </div>
         </div>
     </div>
 
@@ -85,27 +56,27 @@ layout: Base
     <!-- Contact Section -->
     <div class="w3-container w3-section w3-padding-32 w3-card w3-white" id="contact">
         <h2 class="w3-border-bottom w3-border-grey w3-padding-16">Contact</h2>
-        <div class="w3-row-padding">
+        <div class="w3-row-padding w3-center">
             <a href="https://www.linkedin.com/in/erick-mccollum">
-                <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
+                <div class="w3-col m3 s6 w3-section w3-button w3-border w3-border-white w3-round-xlarge">
                     <i class="fab fa-linkedin fa-3x"></i>
                     <p>LinkedIn</p>
                 </div>
             </a>
             <a href="https://github.com/frederickm13">
-                <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
+                <div class="w3-col m3 s6 w3-section w3-button w3-border w3-border-white w3-round-xlarge">
                     <i class="fab fa-github-square fa-3x"></i>
                     <p>GitHub</p>
                 </div>
             </a>
             <a href="mailto:fgmccollum4@gmail.com">
-                <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
+                <div class="w3-col m3 s6 w3-section w3-button w3-border w3-border-white w3-round-xlarge">
                     <i class="fas fa-envelope-square fa-3x"></i>
                     <p>Email</p>
                 </div>
             </a>
             <a href="https://www.facebook.com/erick.mccollum">
-                <div class="w3-col m3 s6 w3-button w3-border w3-border-white w3-round-xlarge">
+                <div class="w3-col m3 s6 w3-section w3-button w3-border w3-border-white w3-round-xlarge">
                     <i class="fab fa-facebook-square fa-3x"></i>
                     <p>Facebook</p>
                 </div>

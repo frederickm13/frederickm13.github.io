@@ -5,7 +5,6 @@ layout: Post
 date:  2019-08-11 -0600
 sourceurl: https://www.linkedin.com/pulse/forecasting-nba-three-pointers-made-next-five-seasons-mccollum/
 category: Post
-featured: 2
 excerpt: The NBA is changing. This is very evident when viewing the growing impact of the three point shot in basketball.
 ---
 
