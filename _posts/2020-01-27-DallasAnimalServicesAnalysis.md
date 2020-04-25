@@ -6,8 +6,8 @@ date:  2020-01-27 -0600
 sourceurl: https://www.linkedin.com/posts/erick-mccollum_analysis-of-dallas-animal-services-data-activity-6627729700913500160-5SPX
 docurl: /data/files/DallasAnimalServicesAnalysis.pdf
 category: Post
-featured: 4
 downloadable: 1
+excerpt: I would like to share one of my recently completed projects as a student in the Master of Science in Business Analytics program at The University of Dallas. This project is an in-depth analysis of Dallas Animal Services data using modern cloud technologies.
 ---
 
 *DISCLAIMER: Any personal opinions stated on this page are solely my own. This article is provided "as-is," without warranty of any kind. I do not claim ownership of any third-party information used in this article.*

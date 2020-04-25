@@ -5,7 +5,6 @@ layout: Post
 date:  2019-03-01 -0600
 sourceurl: https://github.com/frederickm13/D365_Samples/tree/master/WebApiCsharp
 category: Project
-featured: 0
 excerpt: This is a basic C# sample "helper" class to demonstrate how to work with Dynamics 365 data programmatically using the Web API.
 ---
 

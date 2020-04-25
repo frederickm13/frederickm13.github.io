@@ -5,7 +5,6 @@ layout: Post
 date:  2019-07-21 -0600
 sourceurl: https://www.linkedin.com/pulse/who-should-learn-computer-programming-frederick-erick-mccollum/
 category: Post
-featured: 0
 excerpt: In an increasingly technological world, you may find yourself wondering if it would be beneficial for you to learn some computer programming. In fact even if you have never thought about it, I would guess that you are at least somewhat interested. After all, you have read this far.
 ---
 

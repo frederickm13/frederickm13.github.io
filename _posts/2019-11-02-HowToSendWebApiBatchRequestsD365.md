@@ -5,7 +5,6 @@ layout: Post
 date:  2019-11-02 -0600
 sourceurl: https://www.linkedin.com/pulse/how-send-web-api-batch-requests-dynamics-365-mccollum/
 category: Post
-featured: 1
 excerpt: Details on how to send Dynamics 365 Web API batch requests, with examples and sample code.
 ---
 

@@ -5,7 +5,6 @@ layout: Post
 date:  2019-01-24 -0600
 sourceurl: https://github.com/frederickm13/CsvSplitter
 category: Project
-featured: 0
 ---
 
 This repo contains applications to split CSV files into a specified number of smaller files.

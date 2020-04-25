@@ -5,7 +5,6 @@ layout: Post
 date:  2019-01-24 -0600
 sourceurl: https://github.com/frederickm13/R_Samples
 category: Project
-featured: 0
 ---
 
 This repo contains various sample scripts written in R. 
