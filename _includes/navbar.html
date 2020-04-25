@@ -1,10 +1,12 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
         <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <!-- Navbar on small screens. Hide on Large screens -->
             <a class="w3-bar-item w3-hide-large w3-right" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="/" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge"><b>ErickMcCollum</b>.com</a>
+            <!-- Hide on small screens -->
+            <a href="/" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge w3-hide-small w3-hide-medium"><b>ErickMcCollum</b>.com</a>
             <!-- Float links to the right. Hide them on small screens -->
             <div class="w3-right w3-hide-small w3-hide-medium">
                 <a href="/blog/" class="w3-bar-item w3-button w3-border w3-border-white w3-round-xlarge">Blog</a>
@@ -14,7 +16,8 @@
         </div>
     
         <!-- Navbar on small screens -->
-        <div id="navbar" class="w3-bar-block w3-white w3-wide w3-hide w3-hide-large">
+        <div id="navbar" class="w3-bar-block w3-white w3-wide w3-hide">
+            <a href="/" class="w3-bar-item w3-button w3-right-align" onclick="toggleFunction()">Home</a>
             <a href="/blog/" class="w3-bar-item w3-button w3-right-align" onclick="toggleFunction()">Blog</a>
             <a href="/#about" class="w3-bar-item w3-button w3-right-align" onclick="toggleFunction()">About</a>
             <a href="/#contact" class="w3-bar-item w3-button w3-right-align" onclick="toggleFunction()">Contact</a>
