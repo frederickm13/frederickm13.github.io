@@ -30,73 +30,73 @@ In this article, I will walk through an example for sending a Dynamics 365 Web A
 
 First, I will create a constructor function to make it easier to create and send the Web API batch request:
 
-<div class="w3-panel w3-card w3-light-grey w3-code">
-    function BatchPostAccounts() {<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.apiUrl = Xrm.Utility.getGlobalContext().getClientUrl() +<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/api/data/v9.1/";<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.uniqueId = "batch_" + (new Date().getTime());<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.batchItemHeader = "--" + <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.uniqueId + <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"\nContent-Type: application/http\nContent-Transfer-Encoding:binary";<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.content = [];<br>
-    }<br>
-    <br>
-    BatchPostAccounts.prototype.addRequestItem = function(entity) {<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.content.push(this.batchItemHeader);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.content.push("");<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.content.push("POST " + this.apiUrl + "accounts" + " HTTP/1.1");<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.content.push("Content-Type: application/json;type=entry");<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.content.push("");<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.content.push(JSON.stringify(entity));<br>
-    }<br>
-    <br>
-    BatchPostAccounts.prototype.sendRequest = function() {<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.content.push("");<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.content.push("--" + this.uniqueId + "--");<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;this.content.push(" ");<br>
-    <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;var xhr = new XMLHttpRequest();<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;xhr.open("POST", encodeURI(this.apiUrl + "$batch"));<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;xhr.setRequestHeader("Content-Type", "multipart/mixed;boundary=" + this.uniqueId);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;xhr.setRequestHeader("Accept", "application/json");<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;xhr.setRequestHeader("OData-MaxVersion", "4.0");<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;xhr.setRequestHeader("OData-Version", "4.0");<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;xhr.addEventListener("load", <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function() { <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Batch request response code: " + xhr.status); <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br>
-    <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;xhr.send(this.content.join("\n"));<br>
+```javascript
+    function BatchPostAccounts() { 
+        this.apiUrl = Xrm.Utility.getGlobalContext().getClientUrl() + 
+            "/api/data/v9.1/"; 
+        this.uniqueId = "batch_" + (new Date().getTime()); 
+        this.batchItemHeader = "--" +  
+            this.uniqueId +  
+            "\nContent-Type: application/http\nContent-Transfer-Encoding:binary"; 
+        this.content = []; 
+    } 
+     
+    BatchPostAccounts.prototype.addRequestItem = function(entity) { 
+        this.content.push(this.batchItemHeader); 
+        this.content.push(""); 
+        this.content.push("POST " + this.apiUrl + "accounts" + " HTTP/1.1"); 
+        this.content.push("Content-Type: application/json;type=entry"); 
+        this.content.push(""); 
+        this.content.push(JSON.stringify(entity)); 
+    } 
+     
+    BatchPostAccounts.prototype.sendRequest = function() { 
+        this.content.push(""); 
+        this.content.push("--" + this.uniqueId + "--"); 
+        this.content.push(" "); 
+     
+        var xhr = new XMLHttpRequest(); 
+        xhr.open("POST", encodeURI(this.apiUrl + "$batch")); 
+        xhr.setRequestHeader("Content-Type", "multipart/mixed;boundary=" + this.uniqueId); 
+        xhr.setRequestHeader("Accept", "application/json"); 
+        xhr.setRequestHeader("OData-MaxVersion", "4.0"); 
+        xhr.setRequestHeader("OData-Version", "4.0"); 
+        xhr.addEventListener("load",  
+            function() {  
+                console.log("Batch request response code: " + xhr.status);  
+            }); 
+     
+        xhr.send(this.content.join("\n")); 
     }
-</div>
+```
 
 *Please note, from my experience the additional empty space after the batch closing tag (line #21 above) is important for formatting issues. The server may return an "invalid JSON" error response if a trailing space is not included in the batch request body.*
 
 Next, I will create three account entity objects in JSON:
 
-<div class="w3-panel w3-card w3-light-grey w3-code">
-    var firstAccount = {<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;name: "Test Account 1"<br>
-    }<br>
-    <br>
-    var secondAccount = {<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;name: "Test Account 2"<br>
-    }<br>
-    <br>
-    var thirdAccount = {<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;name: "Test Account 3"<br>
+```javascript
+    var firstAccount = { 
+        name: "Test Account 1" 
+    } 
+     
+    var secondAccount = { 
+        name: "Test Account 2" 
+    } 
+     
+    var thirdAccount = { 
+        name: "Test Account 3" 
     }
-</div>
+```
 
 Finally, I will feed these account entity objects into the constructor function, and send the Web API batch request:
 
-<div class="w3-panel w3-card w3-light-grey w3-code">
-    var batchRequest = new BatchPostAccounts();<br>
-    batchRequest.addRequestItem(firstAccount);<br>
-    batchRequest.addRequestItem(secondAccount);<br>
-    batchRequest.addRequestItem(thirdAccount);<br>
-    batchRequest.sendRequest();<br>
-</div>
+```javascript
+    var batchRequest = new BatchPostAccounts(); 
+    batchRequest.addRequestItem(firstAccount); 
+    batchRequest.addRequestItem(secondAccount); 
+    batchRequest.addRequestItem(thirdAccount); 
+    batchRequest.sendRequest(); 
+```
 
 The full code used in this example may be found in my *[GitHub](https://github.com/)* repository at the following link: [WebApiBatch Sample Code](https://github.com/frederickm13/D365_Samples/tree/master/WebApiBatch)
 
