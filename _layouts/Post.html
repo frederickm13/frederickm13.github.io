@@ -3,49 +3,45 @@ layout: Base
 ---
 <!-- Navbar (sit on top) -->
 {% include navbar.html %}
-
-<div class="w3-padding-48">
-
     <!-- Page content -->
-    <div class="w3-content w3-padding">
-        <header class="w3-container w3-center w3-padding-32 w3-card w3-white w3-section">
-            <h1>{{ page.title }}</h1> 
-            <p><i>{{ page.author }} | {{ page.date | date_to_string: "ordinal", "US" }}</i></p>
-        </header> 
+<main class="w3-content w3-padding" style="max-width:1500px">
+    <header class="w3-container w3-center w3-padding-16 w3-card w3-white w3-section">
+        <h1>{{ page.title }}</h1> 
+        <span style="font-style: italic;" class="w3-text-dark-grey">{{ page.author }} | {{ page.date | date_to_string: "ordinal", "US" }}</span>
+    </header> 
 
-        <div class="w3-section w3-card w3-white w3-padding-large">
-            <div>
-                {{ content }}
-            </div>
-            <hr>
-            <div class="w3-row-padding">
-                {% if page.downloadable == 1 %}
-                    <div class="w3-col m6 w3-section">
-                        <a href="{{ page.docurl }}" class="w3-button w3-border w3-light-grey w3-border-grey w3-round-xlarge w3-hover-border-light-grey w3-block"><i class="fas fa-file-pdf"></i> View PDF File</a>
-                    </div>
-                    <div class="w3-col m6 w3-section">
-                        <a href="{{ page.sourceurl }}" class="w3-button w3-border w3-light-grey w3-border-grey w3-round-xlarge w3-hover-border-light-grey w3-block">
-                            {% if page.category == "Project" %}
-                            View on GitHub
-                            {% endif %}
-                            {% if page.category == "Post" %}
-                            Like or Comment on LinkedIn
-                            {% endif %}
-                        </a>
-                    </div>
-                {% else %}
-                    <div class="w3-col w3-section">
-                        <a href="{{ page.sourceurl }}" class="w3-button w3-border w3-light-grey w3-border-grey w3-round-xlarge w3-hover-border-light-grey w3-block">
-                            {% if page.category == "Project" %}
-                            View on GitHub
-                            {% endif %}
-                            {% if page.category == "Post" %}
-                            Like or Comment on LinkedIn
-                            {% endif %}
-                        </a>
-                    </div>
-                {% endif %}
-            </div>
+    <div class="w3-section w3-card w3-white w3-padding-large">
+        <article>
+            {{ content }}
+        </article>
+        <hr>
+        <div class="w3-row-padding">
+            {% if page.downloadable == 1 %}
+                <div class="w3-col m6 w3-section">
+                    <a href="{{ page.docurl }}" class="w3-button w3-border w3-light-grey w3-border-grey w3-round-xlarge w3-hover-border-light-grey w3-block"><i class="fas fa-file-pdf"></i> View PDF File</a>
+                </div>
+                <div class="w3-col m6 w3-section">
+                    <a href="{{ page.sourceurl }}" class="w3-button w3-border w3-light-grey w3-border-grey w3-round-xlarge w3-hover-border-light-grey w3-block">
+                        {% if page.category == "Project" %}
+                        View on GitHub
+                        {% endif %}
+                        {% if page.category == "Post" %}
+                        Like/Comment on LinkedIn
+                        {% endif %}
+                    </a>
+                </div>
+            {% else %}
+                <div class="w3-col w3-section">
+                    <a href="{{ page.sourceurl }}" class="w3-button w3-border w3-light-grey w3-border-grey w3-round-xlarge w3-hover-border-light-grey w3-block">
+                        {% if page.category == "Project" %}
+                        View on GitHub
+                        {% endif %}
+                        {% if page.category == "Post" %}
+                        Like/Comment on LinkedIn
+                        {% endif %}
+                    </a>
+                </div>
+            {% endif %}
         </div>
     </div>
-</div>
+</main>
