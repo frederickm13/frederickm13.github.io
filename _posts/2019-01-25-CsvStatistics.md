@@ -1,10 +1,10 @@
 ---
 title: CSV Statistics Application
-author: Erick McCollum
 layout: Post
+external: GitHub
 date:  2019-01-25 -0600
-sourceurl: https://github.com/frederickm13/CsvStatistics
-category: Project
+sourceurl: https://github.com/frederickm13/data-science/tree/master/CsvStatistics
+excerpt: Command line application to see a various amount of statistics based on an imported .csv file. This application is written in Python.
 ---
 
 Command line application to see a various amount of statistics based on an imported .csv file. This application is written in Python.

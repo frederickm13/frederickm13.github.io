@@ -1,14 +1,11 @@
 ---
 title: CrmWebApiFun.cs Sample "Helper" Class
-author: Erick McCollum
 layout: Post
 date:  2019-03-01 -0600
-sourceurl: https://github.com/frederickm13/D365_Samples/tree/master/WebApiCsharp
-category: Project
+external: GitHub
+sourceurl: https://github.com/frederickm13/code-samples/tree/master/Dynamics365/WebApiCsharp
 excerpt: This is a basic C# sample "helper" class to demonstrate how to work with Dynamics 365 data programmatically using the Web API.
 ---
-
-*Please note, this code is provided to the community as-is. This code is not certified for production use without further review and testing by your organization.*
 
 This is a basic C# sample "helper" class to demonstrate how to work with Dynamics 365 data programmatically using the Web API. More information about the Dynamics 365 Web API may be found at the following official documentation links: 
 - [Query Data using the Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/query-data-web-api)

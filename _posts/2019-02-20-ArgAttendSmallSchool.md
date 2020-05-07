@@ -1,15 +1,14 @@
 ---
 title: The Argument for Attending a Smaller University
-author: Erick McCollum
 layout: Post
 date:  2019-02-20 -0600
+external: LinkedIn
 sourceurl: https://www.linkedin.com/pulse/argument-attending-smaller-university-frederick-erick-mccollum/
-category: Post
+excerpt: I enjoyed my time at Schreiner University so much, that I decided to author an article containing my argument for attending a smaller unversity. Please take a moment to read, and feel free to like or comment on LinkedIn!
+
 ---
 
 I enjoyed my time at Schreiner University so much, that I decided to author an article containing my argument for attending a smaller unversity. Please take a moment to read, and feel free to like or comment on LinkedIn!
-
-*DISCLAIMER: This article reflects my personal opinion only, and is not associated in any way to another person or organization. In no way am I stating that all small schools are academically superior to large schools. When it comes down to it, the decision to attend a university should be made on a number of different variables. Enrollment size is just one of these variables, and should not be the sole determining factor.*
 
 As a high school graduate looking to attend college, there were only two options that I was considering for the next level of my education: 1) attend a large university as a student, or 2) attend a smaller university as a student-athlete. Ultimately, I chose the latter. I was a decent basketball player in high school, and I wanted to pursue the possibility of continuing my education while still playing the sport that I love.
 
