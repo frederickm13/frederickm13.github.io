@@ -1,11 +1,9 @@
 ---
 title: View This Website's Source Code!
-author: Erick McCollum
 layout: Post
+external: GitHub
 date:  2019-01-24 -0600
 sourceurl: https://github.com/frederickm13/frederickm13.github.io
-category: Project
-featured: 0
 excerpt: I am very excited to be actively developing my own website!
 ---
 

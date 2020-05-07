@@ -25,8 +25,7 @@ title: ErickMcCollum.com |
             {% for post in site.posts %}
             <li>
                 <a href="{{ post.url }}" class="w3-hover-text-grey">{{ post.title }}</a> (<span class="w3-text-dark-grey">{{ post.date | date_to_string: "ordinal", "US" }}</span>)
-                <br>
-                <span class="w3-text-dark-grey">{{ post.excerpt }}</span>
+                <p><span class="w3-text-dark-grey">{{ post.excerpt }}</span></p>
             </li>
             {% endfor %}
         </ul>

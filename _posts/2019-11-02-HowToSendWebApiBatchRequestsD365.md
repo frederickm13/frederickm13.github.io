@@ -1,14 +1,11 @@
 ---
 title: How to Send Web API Batch Requests in Dynamics 365
-author: Erick McCollum
 layout: Post
 date:  2019-11-02 -0600
+external: LinkedIn
 sourceurl: https://www.linkedin.com/pulse/how-send-web-api-batch-requests-dynamics-365-mccollum/
-category: Post
 excerpt: Details on how to send Dynamics 365 Web API batch requests, with examples and sample code.
 ---
-
-*DISCLAIMER: Any personal opinions stated on this page are solely my own. This article is provided "as-is," without warranty of any kind. I do not claim ownership of any third-party information used in this article.*
 
 There are times when developing in Dynamics 365 where you may need to perform multiple operations at one time. For example, you may want to create three new account records on the click of a button. In order to do so, it is possible to send three separate HTTP requests to create these three account records using the Dynamics 365 Web API. However this is not ideal, as it becomes far less efficient as the number of records to create increases. In the future if you ever need to increase the record count to create twenty records, then you are having to send twenty different HTTP requests to complete this. 
 
@@ -29,7 +26,8 @@ In this article, I will walk through an example for sending a Dynamics 365 Web A
 
 First, I will create a constructor function to make it easier to create and send the Web API batch request:
 
-```javascript
+<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+
     function BatchPostAccounts() { 
         this.apiUrl = Xrm.Utility.getGlobalContext().getClientUrl() + 
             "/api/data/v9.1/"; 
@@ -67,13 +65,15 @@ First, I will create a constructor function to make it easier to create and send
      
         xhr.send(this.content.join("\n")); 
     }
-```
+
+</pre>
 
 *Please note, from my experience the additional empty space after the batch closing tag (line #21 above) is important for formatting issues. The server may return an "invalid JSON" error response if a trailing space is not included in the batch request body.*
 
 Next, I will create three account entity objects in JSON:
 
-```javascript
+<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+
     var firstAccount = { 
         name: "Test Account 1" 
     } 
@@ -85,19 +85,22 @@ Next, I will create three account entity objects in JSON:
     var thirdAccount = { 
         name: "Test Account 3" 
     }
-```
+
+</pre>
 
 Finally, I will feed these account entity objects into the constructor function, and send the Web API batch request:
 
-```javascript
+<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+
     var batchRequest = new BatchPostAccounts(); 
     batchRequest.addRequestItem(firstAccount); 
     batchRequest.addRequestItem(secondAccount); 
     batchRequest.addRequestItem(thirdAccount); 
     batchRequest.sendRequest(); 
-```
 
-The full code used in this example may be found in my *[GitHub](https://github.com/)* repository at the following link: [WebApiBatch Sample Code](https://github.com/frederickm13/D365_Samples/tree/master/WebApiBatch)
+</pre>
+
+The full code used in this example may be found in my *[GitHub](https://github.com/)* repository at the following link: [WebApiBatch Sample Code](https://github.com/frederickm13/code-samples/tree/master/Dynamics365/WebApiBatch)
 
 ### Resources
 For additional information and guidance, please see the following resources:
