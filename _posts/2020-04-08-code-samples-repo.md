@@ -1,7 +1,7 @@
 ---
 title: Code Samples GitHub Repository
 layout: Post
-date: 2019-04-08 -0600
+date: 2020-04-08 -0600
 sourceurl: https://github.com/frederickm13/R_Samples
 excerpt: This repo contains various sample scripts written in R. Included are scripts to assist in creating data visualizations.
 external: GitHub
