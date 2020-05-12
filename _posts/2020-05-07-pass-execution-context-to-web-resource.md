@@ -3,7 +3,7 @@ title: How to Pass Execution Context to a Web Resource in Dynamics 365
 layout: Post
 date: 2020-05-07 -0600
 sourceurl: https://github.com/frederickm13/code-samples/Dynamics365/PassFormContextToWebResource
-excerpt: 
+excerpt: In this article, I will be demonstrating how you can use the getContentWindow() method of the Power Apps JavaScript Client API to pass executionContext into a web resource/iframe control on a form. 
 external: GitHub
 ---
 
@@ -11,10 +11,10 @@ When customizing Dynamics 365 forms using JavaScript, there may be a situation i
 
 In this article, I will be demonstrating how you can use the [`getContentWindow()`](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/controls/getcontentwindow) method of the [Power Apps JavaScript Client API](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference) to pass [`executionContext`](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/executioncontext) into a web resource/iframe control on a form. 
 
-### Overview
+## Overview
 The following steps exhibit how you can create a custom HTML button on the Dynamics 365 form that will toggle lock/unlock a field on the form. Please note, this example will only work in the [Unified Interface](https://docs.microsoft.com/en-us/powerapps/user/unified-interface).
 
-### Create a custom web resource
+## Create a custom web resource
 First, I will create a custom HTML web resource. This web resource will be very simple, and it will only contain an HTML button in its content window. I will name this web resource "sample_web-resource.html." 
 
 Please see the HTML markup for this web resource below:
@@ -69,12 +69,12 @@ Please see the JavaScript code for this web resource below:
 
 </pre>
 
-### Add the custom web resource to the Dynamics 365 form
+## Add the custom web resource to the Dynamics 365 form
 After creating the above two web resources, I will add the "sample_web-resource.html" web resource to the Dynamics 365 form. This component will be added to the form as a web resource control named "WebResource_sample_web-resource." 
 
 For the purposes of this demonstration, I will not walk through the full steps necessary to add this web resource control to the Dynamics 365 form. However, the following official *Microsoft* Documentation contains some helpful information on this topic: [Use IFRAME and web resource controls on a form](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/use-iframe-and-web-resource-controls-on-a-form).
 
-### Add JavaScript to the Dynamics 365 form
+## Add JavaScript to the Dynamics 365 form
 Now, I will add some JavaScript to the Dynamics 365 form. The following JavaScript code will pass the form's [`executionContext`](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/execution-context) object into the custom web resource control that we added to the form. In order to properly work, this JavaScript should be registered on the form's [OnLoad](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/events/form-onload) event. 
 
 Please see the OnLoad JavaScript code below:
@@ -101,7 +101,7 @@ Please see the OnLoad JavaScript code below:
 
 The custom web resource control ("WebResource_sample_web-resource") can now obtain and use the [`formContext`](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/executioncontext/getformcontext) object to perform operations on the Dynamics 365 form. After saving and publishing the above customizations, the custom HTML button should now lock/unlock the "name" field on the Dynamics 365 form when the button is clicked.
 
-### How does this work?
+## How does this work?
 The `getContentWindow()` Client API method returns a [Promise Object](https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/promise). This Promise resolves with a reference to the web resource control's inner [`contentWindow`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/contentWindow) object. This inner `contentWindow` that is returned from the Promise can then be used to access any of the custom web resource's global variables, functions, objects, etc. 
 
 In this simple example, I used the web resource's inner `contentWindow` object to pass the form's [`executionContext`](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/execution-context) object. 
