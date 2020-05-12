@@ -2,7 +2,7 @@
 title: How to Pass Execution Context to a Web Resource in Dynamics 365
 layout: Post
 date: 2020-05-07 -0600
-sourceurl: https://github.com/frederickm13/code-samples/Dynamics365/PassFormContextToWebResource
+sourceurl: https://github.com/frederickm13/code-samples/tree/master/Dynamics365/PassExecutionContextToWebResource
 excerpt: In this article, I will be demonstrating how you can use the getContentWindow() method of the Power Apps JavaScript Client API to pass executionContext into a web resource/iframe control on a form. 
 external: GitHub
 ---
