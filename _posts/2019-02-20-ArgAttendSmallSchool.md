@@ -16,31 +16,31 @@ I will be honest. At the time of high school graduation, I never would have cons
   
 With this being said, I would like to share a few of my most valuable points to be made in the argument for attending a smaller university.
 
-### Valuable Professional Relationship with Professors
+## Valuable Professional Relationship with Professors
 
 This is possibly the most important point that I will make in this argument. If there is one part of this article that you remember, please remember this. In a large university you will be in large classes. In these larger classes, you will have minimal opportunity to stand out and uniquely set yourself apart from your peers. However, in a smaller university you will never be seen as just another number in the grand scheme of high enrollment. In a smaller university, you will have an abundance of opportunities to set yourself apart from other students in your classes. This will allow your professors to truly get to know you, setting the foundation for a strong professional relationship between yourself and your professors.
 
 Having a strong professional relationship with your professors is as valuable as the degree that you achieve. Many professors will be more than happy to provide personalized career guidance, help set up meetings for you with industry professionals, or even be a professional reference on your resume. You may even have a professor that is willing to personally recommend you for jobs with one of their industry contacts.
     
-### More Opportunities to Make a Positive Impact on Campus
+## More Opportunities to Make a Positive Impact on Campus
 
 When beginning your professional life in the "real world," one of the most important keys to success is ensuring that you create or add value to your company/employer. While this is a skill that you can improve throughout your career, attending a smaller university will give you a greater opportunity to grow this skill throughout your time as a student. Attending a smaller university will present you with a wealth of opportunities to make a positive impact on campus and in the community. This will help better enable you to bring a positive impact to your company/employer in your future career. Additionally, it should be mentioned that extra-curricular and volunteer experience look great on a resume.
  
 Does an organization on campus look interesting? Then become a member! Do you want to be a part of a club, but don't like any of the current options available? Then take initiative, and create a new club on campus that you want to be a part of! Do you enjoy organizing events? Find an upcoming event to volunteer to help with, or go ahead and organize an event of your own! At a smaller university, the options to have a positive influence are limitless, and you can shape your own experience.
    
-### Network and Connect with a Diverse Assembly of Students
+## Network and Connect with a Diverse Assembly of Students
 
 While attending college, networking with other students is an important part of the experience. Not only will you build professional relationships that will last a lifetime, but you will have the opportunity to build these relationships with a very diverse assembly of students. A diverse assembly of students that will be from all over the world, and have many different interests. In a larger university, many of the students that you interact with will be those that are on the same educational path as you. However, in a smaller university you will have more opportunities to interact with all students, including those who do not have the same major as you.
    
 For example, at a larger university you may be attending major-specific networking events. However, at a smaller university you may be attending a university-wide networking event. This presents you with the opportunity to network and create professional relationships with those outside of your current area of education. In a way, this will diversify your "portfolio" that is your professional network. The more diversified your professional network is, the better value you will gain from it in the future.
    
-### No Loyalty to One Large School's Athletics Program
+## No Loyalty to One Large School's Athletics Program
 
 Okay, now this one is more of a fun personal preference as a college basketball fan. However, please give me a moment to explain before completely dismissing this point. 
 
 When the third month of the year rolls around and it's time for televised college basketball tournaments, you can cheer for any team you like. You do not need to feel guilty when cheering for athletic programs other than the one you attended (unless you attended a small Division I university that has qualified for a televised sporting event, in which case I recommend cheering for them). It's almost like being a free agent every year as a televised collegiate athletics fan. What in the sports world could be more exciting or flexible than that?
     
-### Last but Not Least: Learn!!!
+## Last but Not Least: Learn!!!
 
 In conclusion, I would like to end this article by reiterating what I have stated in the disclaimer at the beginning. In no way am I stating that all small schools are academically superior to large schools. When it comes down to it, the decision to attend a university should be made on a number of different variables. Enrollment size is just one of these variables, and should not be the sole determining factor.
   

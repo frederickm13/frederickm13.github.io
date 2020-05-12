@@ -62,7 +62,7 @@ Below is a code snippet showing how the list will be serialized, and how the tim
 
 The full code used for this performance test may be found in my *[GitHub](https://github.com/)* repository at the following link: [SerializationWithSystemTextJson](https://github.com/frederickm13/code-samples/tree/master/dotnet/SerializationWithSystemTextJson).
 
-### Results
+## Results
 
 The performance results from this console application may be seen below:
 
