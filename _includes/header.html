@@ -1,6 +1,6 @@
 <head>
-    <title>{{ page.title }} | ErickMcCollum.com</title>
-    <meta name="description" content="Welcome to my personal website! I hope you enjoy the content, and please feel free to check back regularly for more.">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | ErickMcCollum.com</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{page.excerpt}}{% else %}{{ site.description }}{% endif %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="msvalidate.01" content="9DF9070C978838240D90F72307A75AE8" />
