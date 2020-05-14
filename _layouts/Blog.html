@@ -25,7 +25,7 @@ layout: Base
         <ul class="w3-ul" id="PostsList">
             {% for post in site.posts %}
             <li>
-                <a href="{{ post.url }}" class="w3-hover-text-grey">{{ post.title }}</a> (<span class="w3-text-grey">{{ post.date | date_to_string: "ordinal", "US" }}</span>)
+                <a href="{{ post.url }}" class="w3-hover-text-grey">{{ post.title }}</a> <span class="w3-text-grey">{{ post.date | date_to_string: "ordinal", "US" }}</span>
                 <p class="w3-text-grey">{{ post.excerpt }}</p>
             </li>
             {% endfor %}

@@ -30,7 +30,7 @@ layout: Base
         <ul class="w3-ul" id="RecentPostsList">
         {% for post in site.posts limit:10 %}
             <li>
-                <a href="{{ post.url }}" class="w3-hover-text-grey">{{ post.title }}</a> (<span class="w3-text-grey">{{ post.date | date_to_string: "ordinal", "US" }}</span>)
+                <a href="{{ post.url }}" class="w3-hover-text-grey">{{ post.title }}</a> <span class="w3-text-grey">{{ post.date | date_to_string: "ordinal", "US" }}</span>
             </li>
         {% endfor %}
         </ul>
