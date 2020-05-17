@@ -75,10 +75,12 @@ function getQueryString()
     });
     
     if (queryStringObj["search"] !== null && queryStringObj["search"] !== undefined) {
+        document.getElementById("searchInput").value = queryStringObj["search"];
         searchString = queryStringObj["search"].toLowerCase();
     }
 
     if (queryStringObj["tagFilter"] !== null && queryStringObj["tagFilter"] !== undefined) {
+        document.getElementById("tag-select").value = queryStringObj["tagFilter"];
         tagString = queryStringObj["tagFilter"].toLowerCase();
     }
 
