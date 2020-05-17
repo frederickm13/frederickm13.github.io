@@ -5,6 +5,7 @@ date: 2020-05-13 -0600
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/JavaScript/ChainingPromises
 excerpt: A good understanding of how to chain JavaScript Promise objects will greatly improve the productivity of a JavaScript developer.
 external: GitHub
+tags: [Programming]
 ---
 
 JavaScript `Promise` objects are a great addition to an already great programming language. However, as the number of `Promise` objects in one's source code increases, that source code can quickly get out of hand if those `Promise` objects are not organized efficiently. 

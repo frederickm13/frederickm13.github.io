@@ -5,6 +5,7 @@ date:  2020-03-01 -0600
 external: LinkedIn
 sourceurl: https://www.linkedin.com/pulse/comparing-performance-systemtextjson-newtonsoftjson-net-mccollum
 excerpt: Are you curious about the performance of the new System.Text.Json API in .NET? 
+tags: [Programming]
 ---
 
 Along with the release of .NET Core 3.0 came a new namespace for working with JSON data: *[System.Text.Json](https://docs.microsoft.com/en-us/dotnet/api/system.text.json?view=netcore-3.1)*. Prior to this, the primary API for working with JSON data in .NET was through the use of *[Newtonsoft's Json.NET](https://www.newtonsoft.com/json)*, a third-party package. However, with the introduction of *System.Text.Json* comes a new, built-in way to work with JSON data.
