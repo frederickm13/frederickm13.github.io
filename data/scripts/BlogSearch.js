@@ -80,11 +80,26 @@ function getQueryString()
     }
 
     if (queryStringObj["tagFilter"] !== null && queryStringObj["tagFilter"] !== undefined) {
-        document.getElementById("tag-select").value = queryStringObj["tagFilter"];
+        setTagSelect(queryStringObj["tagFilter"]);
         tagString = queryStringObj["tagFilter"].toLowerCase();
     }
 
     searchPosts(searchString, tagString);
+}
+
+function setTagSelect(stringVal) {
+    let tagSelectEl = document.getElementById("tag-select");
+    let tagSelectOptions = tagSelectEl.options;
+    let selectIndex = 0;
+
+    for (x = 0; x < tagSelectOptions.length; x++) {
+        if (tagSelectOptions[x].value === stringVal) {
+            selectIndex =  tagSelectOptions[x].index;
+            break;
+        }
+    }
+
+    tagSelectEl.selectedIndex = selectIndex;
 }
 
 function showAllPosts() {
