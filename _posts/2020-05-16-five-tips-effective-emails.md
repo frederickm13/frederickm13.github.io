@@ -78,7 +78,8 @@ I have included two sample emails below. These two sample emails are a simple "b
     I hope that you had a great weekend. 
     When you get the chance, could you please provide an update on the status of your TPS Reports? 
 
-    I wanted to follow up with you after our team meeting last week. As a reminder, the following items should be included with your report:
+    I wanted to follow up with you after our team meeting last week. As a reminder, the following 
+    items should be included with your report:
 
         <strong>TPS Report Requirements</strong>
         - Cover sheet
