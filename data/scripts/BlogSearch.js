@@ -1,15 +1,15 @@
 function triggerSearch(event) {
     if (event.keyCode === 13) {
-        hashSearch();
+        doSearch();
     }
 }
 
-function setHash(hashString) {
-    if (hashString === null || hashString === undefined) {
-        hashString = "";
+function setSearch(queryString) {
+    if (queryString === null || queryString === undefined) {
+        window.open("/blog/", "_self");
+    } else {
+        window.location.search = queryString;
     }
-
-    window.location.hash = hashString;
 }
 
 function getSearchString() {
@@ -31,8 +31,8 @@ function getTagFilter() {
     return filterString;
 }
 
-function buildHashString(searchString, filterString) {
-    let queryString = "";
+function buildSearchString(searchString, filterString) {
+    let queryString = null;
     let hasSearchString = false;
 
     if (searchString !== null && searchString !== undefined) {
@@ -56,32 +56,18 @@ function buildHashString(searchString, filterString) {
 
 function getQueryString() 
 {
-    let queryString = decodeURI(window.location.hash).replace("#", "");
-    let searchString = null;
-    let tagString = null;
+    let params = (new URL(window.location)).searchParams;
+    let searchString = params.get("search");
+    let tagString = params.get("tagFilter");
     
-    if (queryString.length > 0) {
-        queryString = queryString.split("&");
-    } else {
-        showAllPosts();
-        return;
+    if (searchString !== null && searchString !== undefined) {
+        document.getElementById("searchInput").value = searchString;
+        searchString = searchString.toLowerCase();
     }
 
-    let queryStringObj = {};
-
-    queryString.forEach(function (str) {
-        str = str.split("=");
-        queryStringObj[str[0]] = decodeURIComponent(str[1]);
-    });
-    
-    if (queryStringObj["search"] !== null && queryStringObj["search"] !== undefined) {
-        document.getElementById("searchInput").value = queryStringObj["search"];
-        searchString = queryStringObj["search"].toLowerCase();
-    }
-
-    if (queryStringObj["tagFilter"] !== null && queryStringObj["tagFilter"] !== undefined) {
-        setTagSelect(queryStringObj["tagFilter"]);
-        tagString = queryStringObj["tagFilter"].toLowerCase();
+    if (tagString !== null && tagString !== undefined) {
+        setTagSelect(tagString);
+        tagString = tagString.toLowerCase();
     }
 
     searchPosts(searchString, tagString);
@@ -154,11 +140,11 @@ function searchPosts(searchString, filterString) {
     }
 }
 
-function hashSearch() {
+function doSearch() {
     let searchString = getSearchString();
     let tagString = getTagFilter();
-    let queryString = buildHashString(searchString, tagString);
-    setHash(queryString);
+    let queryString = buildSearchString(searchString, tagString);
+    setSearch(queryString);
 }
 
 function clearFilters() {
@@ -168,13 +154,9 @@ function clearFilters() {
     searchBox.value = null;
     tagSelect.value = "";
 
-    hashSearch();
+    doSearch();
 }
 
 window.addEventListener("DOMContentLoaded", function () {
-    getQueryString();
-});
-
-window.addEventListener("hashchange", function () {
     getQueryString();
 });
