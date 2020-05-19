@@ -5,7 +5,7 @@ function triggerSearch(event) {
 }
 
 function setSearch(queryString) {
-    if (queryString === null || queryString === undefined) {
+    if (queryString.length < 1 || queryString === null || queryString === undefined) {
         window.open("/blog/", "_self");
     } else {
         window.location.search = queryString;
@@ -32,7 +32,7 @@ function getTagFilter() {
 }
 
 function buildSearchString(searchString, filterString) {
-    let queryString = null;
+    let queryString = "";
     let hasSearchString = false;
 
     if (searchString !== null && searchString !== undefined) {
