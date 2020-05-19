@@ -15,3 +15,4 @@ https://www.erickmccollum.com/2020/03/01/Serialization-With-SystemTextJson.html
 https://www.erickmccollum.com/2020/04/08/code-samples-repo.html
 https://www.erickmccollum.com/2020/04/08/data-science-repo.html
 https://www.erickmccollum.com/2020/05/07/pass-execution-context-to-web-resource.html
+https://www.erickmccollum.com/2020/05/16/five-tips-effective-emails.html
