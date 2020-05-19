@@ -18,6 +18,7 @@ layout: Base
                 {% if page.downloadable == 1 %}
                 <a href="{{ page.docurl }}" class="w3-button w3-border w3-light-grey w3-border-grey w3-round w3-hover-border-light-grey w3-margin"><i class="fas fa-file-pdf"></i> View PDF File</a>
                 {% endif %}
+                {% if page.external %}
                 <a href="{{ page.sourceurl }}" class="w3-button w3-border w3-light-grey w3-border-grey w3-round w3-hover-border-light-grey w3-margin">
                     {% if page.external == "GitHub" %}
                     <i class="fab fa-github-square"></i> View on GitHub
@@ -26,6 +27,7 @@ layout: Base
                     <i class="fab fa-linkedin"></i> View on LinkedIn
                     {% endif %}
                 </a>
+                {% endif %}
             </div>
         </div>
     </article>
