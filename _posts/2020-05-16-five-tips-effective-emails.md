@@ -13,8 +13,8 @@ Emails are an integral part of everyday communication, and they will be for year
 
 Please see five tips below for writing more effective emails. 
 
-## 1. Include the purpose within the first two lines.
-When I say "purpose," I mean the reason why the email is being sent. If the email is being sent to ask about some TPS Reports, then ask about the TPS reports within the first two lines.
+## 1. Include the purpose within the first two sentences.
+When I say "purpose," I mean the reason why the email is being sent. If the email is being sent to ask about some TPS Reports, then ask about the TPS reports within the first two sentences.
 
 I would say to include the purpose in the first line. However, it is common to begin the email with a friendly greeting. For example, "I hope you had a great weekend."
 
@@ -76,10 +76,9 @@ I have included two sample emails below. These two sample emails are a simple "b
     Hello Engineer, 
 
     I hope that you had a great weekend. 
-    I wanted to follow up with you after our team meeting last week. When you get the chance, 
-    could you please provide an update on the status of your TPS Reports? 
+    When you get the chance, could you please provide an update on the status of your TPS Reports? 
 
-    As a reminder, the following items should be included with your report:
+    I wanted to follow up with you after our team meeting last week. As a reminder, the following items should be included with your report:
 
         <strong>TPS Report Requirements</strong>
         - Cover sheet
