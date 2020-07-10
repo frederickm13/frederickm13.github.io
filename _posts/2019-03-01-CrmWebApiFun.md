@@ -8,6 +8,8 @@ excerpt: This is a basic C# sample "helper" class to demonstrate how to work wit
 tags: [Programming, Dynamics 365]
 ---
 
+*Please note, this code is provided to the community as-is, and for example/learning purposes only. This code is not certified for production use without further review and testing by your organization.*
+
 This is a basic C# sample "helper" class to demonstrate how to work with Dynamics 365 data programmatically using the Web API. More information about the Dynamics 365 Web API may be found at the following official documentation links: 
 - [Query Data using the Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/query-data-web-api)
 - [Web API Reference](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9)
