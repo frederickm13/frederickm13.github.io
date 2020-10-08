@@ -13,6 +13,6 @@ I performed an analysis of city of Dallas crime data (as of the August, 2020). T
 Please click the "View on Tableau Public" below to view this data visualization.
 
 ### Acknowledgements
-Data source: "Police Incidents." *[Dallas OpenData](https://www.dallasopendata.com/)*. Retrieved from: https://www.dallasopendata.com/Public-Safety/Police-Incidents/qv6i-rri7 in July of 2020.
+Data source: "Police Incidents." *[Dallas OpenData](https://www.dallasopendata.com/)*. Retrieved from: [https://www.dallasopendata.com/Public-Safety/Police-Incidents/qv6i-rri7](https://www.dallasopendata.com/Public-Safety/Police-Incidents/qv6i-rri7) in July of 2020.
 
 *Note: The data set used in this analysis contains records ranging from June of 2014 to July of 2020.*

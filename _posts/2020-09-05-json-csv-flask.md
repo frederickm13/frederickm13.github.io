@@ -1,5 +1,5 @@
 ---
-title: 
+title: json-to-csv-flask Web Application
 layout: Post
 date:  2020-09-05 -0600
 external: GitHub
@@ -13,7 +13,7 @@ This is a simple Flask web application that allows the user to perform the follo
 - JSON string -> CSV string
 - CSV string -> JSON string
 
-For a video overview of this web application, please see the following video on YouTube: https://youtu.be/QsJi5qOSZS4.
+For a video overview of this web application, please see the following video on *[YouTube](https://www.youtube.com)*: [Flask Web Application Overview: json-to-csv-flask](https://youtu.be/QsJi5qOSZS4).
 
 ## Usage
 After navigating to the web app, the user is presented with two text boxes, two drop-down fields, and a "Convert" button. In order to convert a string, please follow the below steps:
