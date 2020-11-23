@@ -20,7 +20,7 @@ First, I will create a custom HTML web resource. This web resource will be very 
 
 Please see the HTML markup for this web resource below:
 
-<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+<pre class="bg-light rounded" style="overflow: auto;">
 
     &lt;!DOCTYPE html&gt;
     &lt;html lang="en"&gt;
@@ -44,7 +44,7 @@ I will also create a custom JavaScript web resource to go with the above HTML. T
 
 Please see the JavaScript code for this web resource below:
 
-<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+<pre class="bg-light rounded" style="overflow: auto;">
 
     window.parentExecutionContext = null;
     window.parentFormContext = null;
@@ -80,7 +80,7 @@ Now, I will add some JavaScript to the Dynamics 365 form. The following JavaScri
 
 Please see the OnLoad JavaScript code below:
 
-<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+<pre class="bg-light rounded" style="overflow: auto;">
 
     // This function should be registered on the form's OnLoad event
     function OnLoad(executionContext) {

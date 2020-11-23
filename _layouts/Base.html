@@ -1,10 +1,73 @@
 <!DOCTYPE html>
 <html lang="en-US">
-{% include header.html %}
+    <head>
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | ErickMcCollum.com</title>
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{page.excerpt}}{% else %}{{ site.description }}{% endif %}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="msvalidate.01" content="9DF9070C978838240D90F72307A75AE8" />
+        <meta name="google-site-verification" content="Y7Zt0RhuROza3esqs8FCUabqVkC-APoo-4LNwWkdQGA" />
+        <link rel="icon" href="/assets/images/my_FavIcon.png" type="image/png">
+        <link rel="apple-touch-icon" href="/assets/images/my_FavIcon.png" type="image/png">
+        <link rel="stylesheet" href="/assets/third-party/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/third-party/fontawesome-free-5.12.0-web/css/fontawesome.css">
+        <link rel="stylesheet" href="/assets/third-party/fontawesome-free-5.12.0-web/css/solid.css">
+        <link rel="stylesheet" href="/assets/third-party/fontawesome-free-5.12.0-web/css/brands.css">
+    </head>
 
-<body class="w3-metro-light-blue">
-    {{ content }}
-    {% include footer.html %}
-</body>
+    <body>
+        <div class="nav justify-content-end bg-dark p-3">
+            <a href="/" class="navbar-brand text-monospace text-light"><span class="font-weight-bold">ErickMcCollum</span><span class="font-weight-light">.com</span></a>
+        </div>
+
+        <div class="container">            
+            <div class="row">
+                <div class="col-md-3 py-3 border-right border-dark">
+                    <nav>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/articles/">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about-me/">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact-me/">Contact Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/sitemap.txt/">Sitemap</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="row py-3 text-center">
+                        <div class="col">
+                            <a href="https://www.linkedin.com/in/erick-mccollum"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href="https://github.com/frederickm13"><i class="fab fa-github-square fa-2x"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href="mailto:fgmccollum4@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.facebook.com/erick.mccollum"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 py-3">
+                    <main>
+                        {{ content }}
+                    </main>
+                </div>
+            </div>
+        </div> 
+
+        <footer class="nav justify-content-center bg-dark p-3">
+            <span class="text-light">This site is powered by <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://pages.github.com/">GitHub Pages</a>, <a href="https://designapp.io/">designapp.io</a>, and <a href="https://fontawesome.com">FontAwesome</a>.</span>
+        </footer>
+    </body>
 
 </html>

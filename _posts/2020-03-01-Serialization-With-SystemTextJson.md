@@ -15,7 +15,7 @@ In this article, I will be comparing the performance of basic JSON serialization
 Performance Test Overview
 I will be performing a very basic performance test using a .NET Core 3.1 console application. Within this console application, I have created a minimal "Note" class that contains three properties: "Id" (integer), "Title" (string), and "NoteText" (string). Please find a code snippet of the "Note" class below:
 
-<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+<pre class="bg-light rounded" style="overflow: auto;">
 
     class Note 
     { 
@@ -39,7 +39,7 @@ I will create one million (1,000,000) instances of this "Note" class, and then a
 
 Below is a code snippet showing how the list will be serialized, and how the timings will be captured, for both the *System.Text.Json* and *Newtonsoft.Json* APIs:
 
-<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+<pre class="bg-light rounded" style="overflow: auto;">
 
     public static int SysJsonSerializeTimer(List&lt;Note&gt; noteList) 
     { 
@@ -67,7 +67,7 @@ The full code used for this performance test may be found in my *[GitHub](https:
 
 The performance results from this console application may be seen below:
 
-<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+<pre class="bg-light rounded" style="overflow: auto;">
 
     ITERATION      SYSTEM.TEXT.JSON (ms)    NEWTONSOFT.JSON (ms) 
     1              1293                     2058 
@@ -85,7 +85,7 @@ The performance results from this console application may be seen below:
 
 </pre>
 
-<img src="/data/images/JsonPerformanceGraph.jpg" class="w3-round w3-image" style="width:100%">
+<img src="/assets/images/JsonPerformanceGraph.jpg" class="rounded w-75">
 
 As can be seen above, the *System.Text.Json* API performs better than the *Newtonsoft.Json* API in all ten iterations of this basic performance test. On average, the *System.Text.Json* API completed the JSON serialization process in about 68% of the time that it took the *Newtonsoft.Json* API to serialize the same data. This means that there was a 32% (about 1.3x) performance improvement when using the new *System.Text.Json* namespace. 
 

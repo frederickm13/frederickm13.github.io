@@ -15,14 +15,13 @@
 # in the templates via {{ site.myvariable }}.
 title: Erick's Website
 email: 
-description: Welcome to my personal website! I hope you enjoy the content, and please feel free to check back regularly for more.
+description: Welcome to my personal website! I hope you enjoy the content, and please feel free to check back regularly for more content.
 baseurl: "/"
 url: "https://www.erickmccollum.com"
 github_username: frederickm13
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
