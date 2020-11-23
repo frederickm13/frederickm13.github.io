@@ -4,7 +4,7 @@ layout: Post
 date:  2020-09-05 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/json-to-csv-flask
-excerpt: his is a simple Flask web application that allows the user to perform simple data format conversions in their browser.
+excerpt: This is a simple Flask web application that allows the user to perform simple data format conversions in their browser.
 tags: [Data Science, Programming, Web Development]
 ---
 
