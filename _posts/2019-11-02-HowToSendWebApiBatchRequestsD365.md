@@ -27,7 +27,7 @@ In this article, I will walk through an example for sending a Dynamics 365 Web A
 
 First, I will create a constructor function to make it easier to create and send the Web API batch request:
 
-<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+<pre class="bg-light rounded" style="overflow: auto;">
 
     function BatchPostAccounts() { 
         this.apiUrl = Xrm.Utility.getGlobalContext().getClientUrl() + 
@@ -73,7 +73,7 @@ First, I will create a constructor function to make it easier to create and send
 
 Next, I will create three account entity objects in JSON:
 
-<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+<pre class="bg-light rounded" style="overflow: auto;">
 
     var firstAccount = { 
         name: "Test Account 1" 
@@ -91,7 +91,7 @@ Next, I will create three account entity objects in JSON:
 
 Finally, I will feed these account entity objects into the constructor function, and send the Web API batch request:
 
-<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+<pre class="bg-light rounded" style="overflow: auto;">
 
     var batchRequest = new BatchPostAccounts(); 
     batchRequest.addRequestItem(firstAccount); 

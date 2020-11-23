@@ -50,7 +50,7 @@ So what does an effective email look like when each of the above tips are utiliz
 I have included two sample emails below. These two sample emails are a simple "before and after." In the first email, I have not made an effort to utilize the above tips. This first sample is not necessarily a bad email. However, in the second sample the effectiveness of the message has greatly improved by implementing the above-mentioned tips.
 
 ### Sample #1 (before)
-<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+<pre class="bg-light rounded" style="overflow: auto;">
 
     Hello Engineer, 
 
@@ -71,7 +71,7 @@ I have included two sample emails below. These two sample emails are a simple "b
 </pre>
 
 ### Sample #2 (after)
-<pre class="w3-light-grey w3-round-large" style="overflow: auto;">
+<pre class="bg-light rounded" style="overflow: auto;">
 
     Hello Engineer, 
 

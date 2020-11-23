@@ -1,25 +1,25 @@
 ---
 layout: Base
 ---
-<!-- Navbar (sit on top) -->
-{% include navbar.html %}
-    <!-- Page content -->
-<main class="w3-content w3-padding">
-    <article>
-        <header class="w3-container w3-center w3-padding-16 w3-card w3-white w3-section">
-            <h1>{{ page.title }}</h1> 
-            <span style="font-style: italic;" class="w3-text-grey">Erick McCollum | {{ page.date | date_to_string: "ordinal", "US" }}</span>
-        </header> 
 
-        <div class="w3-card w3-white w3-padding-large">
-            {% include disclaimer.html %}
-            {{ content }}
-            <div class="w3-container w3-center">
-                {% if page.downloadable == 1 %}
-                <a href="{{ page.docurl }}" class="w3-button w3-border w3-light-grey w3-border-grey w3-round w3-hover-border-light-grey w3-margin"><i class="fas fa-file-pdf"></i> View PDF File</a>
-                {% endif %}
-                {% if page.external %}
-                <a href="{{ page.sourceurl }}" class="w3-button w3-border w3-light-grey w3-border-grey w3-round w3-hover-border-light-grey w3-margin">
+<article>
+    <header>
+        <h1>{{ page.title }}</h1> 
+        <p class="text-secondary font-italic">Erick McCollum | {{ page.date | date_to_string: "ordinal", "US" }}</p>
+    </header> 
+
+    <div>
+        {% include disclaimer.html %}
+        {{ content }}
+        <div class="row py-3 text-center">
+            {% if page.downloadable == 1 %}
+            <div class="col-sm">
+                <a href="{{ page.docurl }}" class=""><i class="fas fa-file-pdf"></i> View PDF File</a>
+            </div>
+            {% endif %}
+            {% if page.external %}
+            <div class="col-sm">
+                <a href="{{ page.sourceurl }}" class="">
                     {% if page.external == "GitHub" %}
                     <i class="fab fa-github-square"></i> View on GitHub
                     {% endif %}
@@ -27,8 +27,8 @@ layout: Base
                     <i class="fab fa-linkedin"></i> View on LinkedIn
                     {% endif %}
                 </a>
-                {% endif %}
             </div>
+            {% endif %}
         </div>
-    </article>
-</main>
+    </div>
+</article>

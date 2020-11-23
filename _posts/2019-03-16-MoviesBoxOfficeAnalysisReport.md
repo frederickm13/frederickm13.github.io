@@ -4,7 +4,7 @@ layout: Post
 date:  2019-03-16 -0600
 external: LinkedIn
 sourceurl: https://www.linkedin.com/posts/erick-mccollum_analysis-of-movie-performance-at-the-box-activity-6551266040465154048-Yf4D
-docurl: /data/files/MoviesBoxOfficeAnalysisReport.pdf
+docurl: /assets/files/MoviesBoxOfficeAnalysisReport.pdf
 downloadable: 1
 excerpt: I wanted to share one of my analytical research reports that was written during my time as a student in The University of Dallas' Master of Science in Business Analytics program. 
 tags: [Data Science]
