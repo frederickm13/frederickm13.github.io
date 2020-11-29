@@ -1,5 +1,8 @@
 https://www.erickmccollum.com
-https://www.erickmccollum.com/blog/
+https://www.erickmccollum.com/articles/
+https://www.erickmccollum.com/about-me/
+https://www.erickmccollum.com/contact-me/
+https://www.erickmccollum.com/assets/pdf/FM_Resume.pdf
 https://www.erickmccollum.com/2019/01/24/CsvSplitter.html
 https://www.erickmccollum.com/2019/01/24/WebSourceCode.html
 https://www.erickmccollum.com/2019/01/25/CsvStatistics.html
