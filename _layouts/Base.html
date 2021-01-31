@@ -10,6 +10,12 @@
         <meta name="msvalidate.01" content="9DF9070C978838240D90F72307A75AE8" />
         <meta name="google-site-verification" content="Y7Zt0RhuROza3esqs8FCUabqVkC-APoo-4LNwWkdQGA" />
 
+        <!-- OpenGraph Meta Tags-->
+        <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | ErickMcCollum.com"/>
+        <meta property="og:image" content="/assets/images/profileheadshot.png"/>
+        <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}ErickMcCollum.com{% endif %}"/>
+        <meta property="og:url" content="{% if page.url %}https://www.erickmccollum.com{{ page.url }}{% else %}https://www.erickmccollum.com{% endif %}"/>
+
         <!-- Linked Resources -->
         <link rel="icon" href="/assets/images/my_FavIcon.png" type="image/png">
         <link rel="shortcut icon" href="/assets/images/my_FavIcon.png" type="image/png">
