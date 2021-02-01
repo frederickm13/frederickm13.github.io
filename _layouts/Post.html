@@ -5,7 +5,7 @@ layout: Base
 <article>
     <header>
         <h1>{{ page.title }}</h1> 
-        <p class="text-secondary font-italic">Erick McCollum | {{ page.date | date_to_string: "ordinal", "US" }}</p>
+        <p class="text-secondary font-italic">Erick McCollum | {{ page.date | date_to_string }}</p>
     </header> 
 
     <div>
@@ -14,12 +14,12 @@ layout: Base
         <div class="row py-3">
             {% if page.downloadable == 1 %}
             <div class="col-sm">
-                <a href="{{ page.docurl }}" class=""><i class="fas fa-file-pdf"></i> View PDF File</a>
+                <a href="{{ page.docurl }}"><i class="fas fa-file-pdf"></i> View PDF File</a>
             </div>
             {% endif %}
             {% if page.external %}
             <div class="col-sm">
-                <a href="{{ page.sourceurl }}" class="">
+                <a href="{{ page.sourceurl }}">
                     {% if page.external == "GitHub" %}
                     <i class="fab fa-github-square"></i> View on GitHub
                     {% endif %}

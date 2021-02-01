@@ -10,10 +10,11 @@ Hello, and welcome to my website! Please feel free to reach out to me with any q
 
 ## Articles
 Please find below the five most recent articles posted to this site. To view all articles, please click the "View All Articles" link below.
-<ul class="list-group list-group-flush">
+
+<ul class="list-group list-group-flush pb-2">
     {% for post in site.posts limit:5 %}
         <li class="list-group-item">
-            <a href="{{ post.url }}">{{ post.title }}</a> <span class="text-muted">{{ post.date | date_to_string: "ordinal", "US" }}</span>
+            <a href="{{ post.url }}">{{ post.title }}</a> <span class="text-muted">{{ post.date | date_to_string }}</span>
         </li>
     {% endfor %}
 </ul>
