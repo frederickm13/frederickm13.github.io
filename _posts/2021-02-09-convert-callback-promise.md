@@ -3,7 +3,7 @@ title: How to convert a callback-based function to a promise-based function in J
 layout: Post
 date:  2021-02-09 -0600
 external: GitHub
-sourceurl: 
+sourceurl: https://github.com/frederickm13/code-samples/tree/master/JavaScript/ConvertCallbackToPromise
 excerpt: In this post I will be discussing how to convert a callback-based function to a promise-based function in JavaScript.
 tags: [JavaScript, Node, Web, Development, Programming]
 ---
@@ -36,7 +36,7 @@ As mentioned above, it is possible to create a "wrapper" promise-based function 
 
     async function readFileAsync(path) {
         return new Promise((resolve, reject) => {
-            fs.readFile(path, "utf8, async (err, data) => {
+            fs.readFile(path, "utf8", async (err, data) => {
                 if (err) {
                     return reject(err);
                 } else {
