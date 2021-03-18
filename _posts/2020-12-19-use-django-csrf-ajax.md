@@ -6,6 +6,7 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/Django/UseCsrfWithAjax
 excerpt: A simple walkthrough of using Django's built-in CSRF protection with AJAX requests
 tags: [Django, Web Application, Programming]
+type: article
 ---
 
 Django includes built-in middleware that provides cross site request forgery (CSRF) protection for forms. However, to use this CSRF protection with AJAX requests, it requires some additional work. The CSRF token is stored in a browser cookie by default. In order to use this CSRF token in an AJAX request, Django requires the token to be sent in a special "X-CSRFToken" request header. Therefore, JavaScript code needs to be written to do the following: 

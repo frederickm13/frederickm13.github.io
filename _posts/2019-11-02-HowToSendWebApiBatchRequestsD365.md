@@ -6,6 +6,7 @@ external: LinkedIn
 sourceurl: https://www.linkedin.com/pulse/how-send-web-api-batch-requests-dynamics-365-mccollum/
 excerpt: Details on how to send Dynamics 365 Web API batch requests, with examples and sample code.
 tags: [Programming, Dynamics 365]
+type: article
 ---
 
 There are times when developing in Dynamics 365 where you may need to perform multiple operations at one time. For example, you may want to create three new account records on the click of a button. In order to do so, it is possible to send three separate HTTP requests to create these three account records using the Dynamics 365 Web API. However this is not ideal, as it becomes far less efficient as the number of records to create increases. In the future if you ever need to increase the record count to create twenty records, then you are having to send twenty different HTTP requests to complete this. 

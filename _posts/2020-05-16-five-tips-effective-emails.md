@@ -2,11 +2,11 @@
 title: Five Tips for Writing More Effective Emails
 layout: Post
 date: 2020-05-16 -0600
-sourceurl: 
+sourceurl: https://www.linkedin.com/posts/erick-mccollum_five-tips-for-writing-more-effective-emails-activity-6668519395674898432-Kt4p
 excerpt: Emails are an integral part of everyday communication, and they will be for years to come. It's important to make an email easy to read, comprehend, and act upon. 
-
-external: 
+external: LinkedIn
 tags: [Career]
+type: article
 ---
 
 Emails are an integral part of everyday communication, and they will be for years to come. However, with so many emails flying around, its easy for an email to be missed or shifted to the backlog of unread items. This is why it's important to make an email easy to read, comprehend, and act upon. 

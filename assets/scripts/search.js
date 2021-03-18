@@ -1,27 +1,50 @@
 function onLoad(event) {
-    document.querySelector("#search-form").addEventListener("submit", doSearch);
+    filterBySearch();
 }
 
-function doSearch(event) {
-    // Prevent default submission
-    event.preventDefault();
+function filterBySearch() {
+    const params = (new URL(window.location)).searchParams;
+    const searchString = params.get("search");
 
-    const searchInput = document.querySelector("#search-input").value;
-
-    if (searchInput === null || typeof(searchInput) === "undefined") {
+    if (searchString === null || typeof(searchString) === "undefined") {
         return;
     }
 
-    const searchInputLower = searchInput.trim().toLowerCase();
+    document.querySelector("#search-input").value = searchString;
 
-    if (searchInputLower === "") {
-        window.open("/articles/", "_self");
+    const searchStringLower = searchString.trim().toLowerCase();
+
+    const articlesList = document.querySelectorAll("#articles-list li");
+
+    if (articlesList.length < 1) {
         return;
     }
 
-    const searchString = "search=" + encodeURIComponent(searchInputLower);
+    articlesList.forEach((article) => {
+        const txtValue = article.textContent || article.innerText;
 
-    window.open(`/articles?${searchString}`, "_self");
+        if (txtValue !== null && typeof(txtValue) !== "undefined") {
+            const txtValueLower = txtValue.trim().toLowerCase();
+
+            if (!filterByText(txtValueLower, searchStringLower))
+            {
+                article.style.display = "none";
+            }
+        }
+    });
+}
+
+function filterByText(txtValue, searchString) {
+    if (searchString === null || searchString === undefined) {
+        return true;
+    }
+
+    if (txtValue.indexOf(searchString) > -1) 
+    {
+        return true;
+    } 
+
+    return false;
 }
 
 document.addEventListener("DOMContentLoaded", onLoad);

@@ -6,6 +6,7 @@ sourceurl: https://github.com/frederickm13/code-samples/tree/master/Dynamics365/
 excerpt: In this article, I will be demonstrating how you can use the getContentWindow() method of the Power Apps JavaScript Client API to pass executionContext into a web resource/iframe control on a form. 
 external: GitHub
 tags: [Dynamics 365, Programming]
+type: article
 ---
 
 When customizing Dynamics 365 forms using JavaScript, there may be a situation in which you want to pass [`executionContext`](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/executioncontext) (or other data) into a web resource or iframe control on the form. For example, you may want to create your own custom HTML button on the form, and have this button perform some operation on the form itself using the [`formContext`](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/executioncontext/getformcontext) object. 

@@ -44,6 +44,9 @@
                                 <a class="nav-link" href="/articles/">Articles</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="/projects/">Projects</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/about-me/">About Me</a>
                             </li>
                             <li class="nav-item">
@@ -72,9 +75,9 @@
                         </div>
                     </div>
                     <div>
-                        <form id="search-form" class="form-inline">
+                        <form id="search-form" action="/search" method="get" class="form-inline">
                             <div class="input-group">
-                                <input type="text" id="search-input" placeholder="Search articles..." class="form-control">
+                                <input type="text" id="search-input" name="search" placeholder="Search all content..." class="form-control">
                                 <div class="input-group-append">
                                     <input type="submit" value="Search" class="btn btn-primary">
                                 </div>
@@ -94,8 +97,6 @@
             <p>This site is powered by <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://pages.github.com/">GitHub Pages</a>, <a href="https://designapp.io/">designapp.io</a>, and <a href="https://fontawesome.com">FontAwesome</a>.</p>
             <p>Copyright &copy; ErickMcCollum.com 2019 | <a href="https://github.com/frederickm13/frederickm13.github.io/blob/master/LICENSE">License</a> | <a href="/terms-conditions/">Terms & Conditions</a> | <a href="/privacy-policy/">Privacy Policy</a> | <a href="/disclaimer/">Disclaimer</a></p>
         </footer>
-
-        <script src="/assets/scripts/search.js"></script>
     </body>
 
 </html>

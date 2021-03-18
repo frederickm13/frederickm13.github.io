@@ -6,6 +6,7 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/data-science/tree/master/PredictingNcaaMarchMadnessResults
 excerpt: I created a predictive model to predict NCAA March Madness tournament results.
 tags: [Data Science]
+type: project
 ---
 
 I created three different predictive models with the objective of predicting NCAA March Madness tournament results. The three model types which were created are as follows: 

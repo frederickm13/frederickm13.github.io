@@ -8,8 +8,8 @@ description: Home page.
 # Home
 Hello, and welcome to my website! Please feel free to reach out to me with any questions and/or comments. Additionally, I would like to invite you to re-visit this site frequently to check back for more content. 
 
-## Articles
-Please find below the five most recent articles posted to this site. To view all articles, please click the "View All Articles" link below.
+## Recent Content
+Please find below the most recent content posted to this site. To view all articles, projects, or search all content please use the respective links in the site's navigation.
 
 <ul class="list-group list-group-flush pb-2">
     {% for post in site.posts limit:5 %}
@@ -18,8 +18,6 @@ Please find below the five most recent articles posted to this site. To view all
         </li>
     {% endfor %}
 </ul>
-
-[View All Articles](/articles/)
 
 ## About Me
 My name is Frederick McCollum, but I go by Erick. I am a motivated IT

@@ -6,6 +6,7 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/JavaScript/ConvertCallbackToPromise
 excerpt: In this post I will be discussing how to convert a callback-based function to a promise-based function in JavaScript.
 tags: [JavaScript, Node, Web, Development, Programming]
+type: article
 ---
 
 When working with asynchronous code in JavaScript, one will inevitably encounter the use of both callback functions and promise objects. Unfortunately, the use of both callbacks and promises in the same source code base can lead to confusion. Additionally, the use of nested callback functions can lead to code that is complicated to read and follow. Nested callback functions can quickly get out of hand, and it is difficult to organize code that utilizes multiple nested callbacks. 
