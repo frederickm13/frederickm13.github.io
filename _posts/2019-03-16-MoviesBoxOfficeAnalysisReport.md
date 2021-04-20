@@ -8,7 +8,7 @@ docurl: /assets/files/MoviesBoxOfficeAnalysisReport.pdf
 downloadable: 1
 excerpt: I wanted to share one of my analytical research reports that was written during my time as a student in The University of Dallas' Master of Science in Business Analytics program. 
 tags: [Data Science]
-type: project
+type: article
 ---
 
 I wanted to share one of my analytical research reports that was written during my time as a student in [The University of Dallas](https://udallas.edu/)' Master of Science in Business Analytics program. Please let me know if you enjoy it, and feel free to share any feedback on LinkedIn, it is much appreciated.
