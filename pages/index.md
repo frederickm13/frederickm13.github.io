@@ -28,6 +28,6 @@ solutions, make a positive business impact, and empower others.
 [Read More](/about-me/)
 
 ## Contact Me
-Please feel free to reach out to me via LinkedIn, GitHub, email, or FaceBook. 
+Please feel free to reach out to me via LinkedIn, GitHub, email, or Facebook. 
 
 [Contact Me](/contact-me/)
