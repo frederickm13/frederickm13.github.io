@@ -12,11 +12,6 @@ layout: Base
         {% include disclaimer.html %}
         {{ content }}
         <div class="row py-3">
-            {% if page.downloadable == 1 %}
-            <div class="col-sm">
-                <a href="{{ page.docurl }}"><i class="fas fa-file-pdf"></i> View PDF File</a>
-            </div>
-            {% endif %}
             {% if page.external %}
             <div class="col-sm">
                 <a href="{{ page.sourceurl }}">
