@@ -1,11 +1,11 @@
 ---
-title: Comparing the Performance of System.Text.Json and Newtonsoft.Json in .NET
+title: Comparing the Performance of System.Text.Json and Newtonsoft.Json in .NET Core
 layout: Post
 date:  2020-03-01 -0600
 external: LinkedIn
 sourceurl: https://www.linkedin.com/pulse/comparing-performance-systemtextjson-newtonsoftjson-net-mccollum
 excerpt: Are you curious about the performance of the new System.Text.Json API in .NET? 
-tags: [Programming]
+tags: [Programming, C#, .NET, ASP.NET, dotnet, dotnetcore, Development, database, JSON, Performance]
 type: article
 ---
 
@@ -13,7 +13,7 @@ Along with the release of .NET Core 3.0 came a new namespace for working with JS
 
 In this article, I will be comparing the performance of basic JSON serialization using both the *System.Text.Json* and *Newtonsoft.Json* APIs.
 
-Performance Test Overview
+## Performance Test Overview
 I will be performing a very basic performance test using a .NET Core 3.1 console application. Within this console application, I have created a minimal "Note" class that contains three properties: "Id" (integer), "Title" (string), and "NoteText" (string). Please find a code snippet of the "Note" class below:
 
 <pre class="bg-light rounded" style="overflow: auto;">
