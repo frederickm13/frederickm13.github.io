@@ -1,5 +1,5 @@
 ---
-title: How to re-use an HttpClient instance with SendAsync.
+title: How to re-use an HttpClient instance with SendAsync
 layout: Post
 date:  2021-06-16 -0600
 external: GitHub
@@ -10,11 +10,12 @@ type: article
 ---
 
 When using the .NET [`HttpClient`](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-5.0) class, there are many different methods that allow one to send HTTP requests to specified API endpoints. Some of the most common are: 
- - GetAsync
- - PostAsync
- - PutAsync
- - PatchAsync
- - DeleteAsync
+
+ - `GetAsync`
+ - `PostAsync`
+ - `PutAsync`
+ - `PatchAsync`
+ - `DeleteAsync`
 
 The above-mentioned methods are convenient and effective to use. However, there is a down side to these methods. These methods require the programmer to set HTTP request headers on the `HttpClient` instance itself through the [`DefaultRequestHeaders`](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.defaultrequestheaders?view=net-5.0) properrty. 
 
