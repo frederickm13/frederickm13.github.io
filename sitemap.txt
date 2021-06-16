@@ -31,3 +31,4 @@ https://www.erickmccollum.com/2021/01/31/ElectronTextEditor.html
 https://www.erickmccollum.com/2021/02/09/convert-callback-promise.html
 https://www.erickmccollum.com/2021/04/20/use-async-await-javascript.html
 https://www.erickmccollum.com/2021/04/27/compare-perf-efcore-sqldatareader.html
+https://www.erickmccollum.com/2021/06/16/httpclient-sendasync.html
