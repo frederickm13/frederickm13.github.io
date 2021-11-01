@@ -3,7 +3,7 @@ title: How to re-use an HttpClient instance with SendAsync
 layout: Post
 date:  2021-06-16 -0600
 external: GitHub
-sourceurl: 
+sourceurl: https://github.com/frederickm13/code-samples/tree/master/dotnet/HttpClient-SendAsync
 excerpt: In this post, I will be demonstrating how to re-use an HttpClient instance with multiple different API endpoints using the SendAsync method.
 tags: [C#, .NET, ASP.NET, dotnet, dotnetcore, Development, Programming, HttpClient, SendAsync]
 type: article
@@ -25,7 +25,7 @@ One solution to this problem is to use the [`HttpClient.SendAsync()`](https://do
 
 To demonstrate this, I have provided an example below. The first code snippet shows how to send an HTTP POST request using the [`HttpClient.PostAsync()`](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.postasync?view=net-5.0) method. The second code snippet shows how to make the same HTTP POST request using the [`HttpClient.SendAsync()`](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.sendasync?view=net-5.0) method.
 
-### Using [`HttpClient.PostAsync()`](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.postasync?view=net-5.0).
+## Using [`HttpClient.PostAsync()`](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.postasync?view=net-5.0).
 
 <pre class="bg-light rounded" style="overflow: auto;">
 
@@ -42,7 +42,7 @@ To demonstrate this, I have provided an example below. The first code snippet sh
     
 </pre>
 
-### Using [`HttpClient.SendAsync()`](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.sendasync?view=net-5.0).
+## Using [`HttpClient.SendAsync()`](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.sendasync?view=net-5.0).
 
 <pre class="bg-light rounded" style="overflow: auto;">
 
