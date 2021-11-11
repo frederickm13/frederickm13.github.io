@@ -5,7 +5,7 @@ date:  2020-11-15 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/data-science/tree/master/ComparisonTexasHospitals
 excerpt: This is an analysis of Texas hospital ratings data.
-tags: [Data Science]
+tags: [Data Science, business analytics]
 type: article
 ---
 
