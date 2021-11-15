@@ -28,7 +28,8 @@ As part of this project, I performed an analysis of CDP (www.cdp.net) climate su
 
 The objective of this project was to answer the above-mentioned business questions, as well as achieve the above-mentioned business and analytics goals. The outcome of this project was to produce measurable KPIs that cities and corporations can use to improve their sustainability footprint.
 
-Methods: The following high-level steps were taken to carry out this project:
+## Methods
+The following high-level steps were taken to carry out this project:
 1.	Parse, clean, and insert the CDP climate survey data into an Amazon Web Services cloud PostgreSQL database using Python and SQL.
 2.	Create analytics-focused queries, views, and tables in the AWS cloud PostgreSQL database.
 3.	Connect to the AWS cloud PostgreSQL database using Tableau.
