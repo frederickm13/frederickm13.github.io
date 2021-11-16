@@ -34,3 +34,4 @@ https://erickmccollum.com/2021/04/27/compare-perf-efcore-sqldatareader.html
 https://erickmccollum.com/2021/06/16/httpclient-sendasync.html
 https://erickmccollum.com/2021/10/31/three-ways-to-measure-python-performance.html
 https://erickmccollum.com/2021/11/11/climate-change-analysis.html
+https://erickmccollum.com/2021/11/15/rust-read-file.html
