@@ -30,6 +30,20 @@ For example, assuming that there is a text file named `test.txt` in the parent d
 
 </pre>
 
+In my example, the above code produced the following output: 
+
+<pre class="bg-light rounded" style="overflow: auto;">
+
+    %cargo run
+
+    Reading the file: ../test.txt
+
+    File contents:
+    ---------------
+    Hello there from test.txt!!!
+
+</pre>
+
 When compared to a similar approach using the C programming language, the Rust approach is much simpler. 
 
 More information may be found in the Rust programming language documentation: [Reading a File](https://doc.rust-lang.org/book/ch12-02-reading-a-file.html).
