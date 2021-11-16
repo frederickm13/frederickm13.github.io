@@ -34,7 +34,7 @@ In my example, the above code produced the following output:
 
 <pre class="bg-light rounded" style="overflow: auto;">
 
-    %cargo run
+    % cargo run
 
     Reading the file: ../test.txt
 
