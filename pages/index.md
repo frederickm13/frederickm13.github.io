@@ -6,7 +6,7 @@ description: Home page.
 ---
 
 # Home
-Hello, and welcome to my website! My name is Frederick McCollum, but I go by Erick. I am a motivated IT professional with an unrivaled passion for technology, learning, and building valuable relationships. I strive to utilize modern technology to create valuable solutions, make a positive business impact, and empower others.
+Hello, and welcome to my website! My name is Frederick McCollum, but I go by Erick. I am a well-organized leader with a work ethic that has never been seen before. Every day I bring a sense of humor and contagious, positive energy. Communication is my best strength, and I honestly enjoy writing documentation. I have an unrivaled passion for technology, learning, solving problems, and building valuable relationships. If you give me a chance, I will be a respected leader within 6 months of joining your team. 
 
 Please feel free to reach out to me with any questions and/or comments. Additionally, I would like to invite you to re-visit this site frequently to check back for more content. 
 
