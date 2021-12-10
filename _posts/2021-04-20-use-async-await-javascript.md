@@ -6,7 +6,6 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/JavaScript/UseAsyncAwaitJavaScript
 excerpt: In this post I will be discussing how to develop using async/await in JavaScript.
 tags: [JavaScript, Node, Web, Development, Programming, Async, Asynchronous, AJAX]
-type: article
 ---
 
 The use of asynchronous programming is essential in web development. Not only is it essential, but asynchronous programming is extremely powerful. In this article I will be giving a brief overview of how to use the `async` and `await` keywords in JavaScript. Also, please find some additional helpful links/resources at the end of this article.

@@ -6,7 +6,6 @@ sourceurl: https://github.com/frederickm13/R_Samples
 excerpt: This repo contains various sample scripts written in R. Included are scripts to assist in creating data visualizations.
 external: GitHub
 tags: [Programming]
-type: project
 ---
 
 This GitHub repo contains code samples for various languages and technologies.

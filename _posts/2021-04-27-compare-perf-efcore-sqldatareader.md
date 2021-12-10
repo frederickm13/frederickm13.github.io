@@ -6,7 +6,6 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/dotnet/EFCoreVsSqlDataReader
 excerpt: In this post I will be comparing the performance of Entity Framework Core and SqlDataReader in ASP.NET Core
 tags: [C#, .NET, ASP.NET, dotnet, dotnetcore, Development, Programming, database, Entity Framework, Entity Framework Core, SqlDataReader, SQL, Performance]
-type: article
 ---
 
 When using ASP.NET Core, there are many different possibilities for integrating with a database. Two popular methods to do this are 1) using an object-relational mapper, such as [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/), or 2) writing SQL queries directly using a lightweight SQL client class, such as the [SqlDataReader](https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqldatareader?view=dotnet-plat-ext-5.0) class. Each of these methods have their own pros and cons. For more information on these two methods, please find some resources in the "Additional Resources" section at the end of this article.

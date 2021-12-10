@@ -6,7 +6,6 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/movie-rater
 excerpt: An interactive web application created using Django and React.js.
 tags: [Django, Web Application]
-type: project
 ---
 
 This is a web application which was created as my capstone project for *[HarvardX's Computer Science for Web Programming](https://www.edx.org/professional-certificate/harvardx-computer-science-for-web-programming)* professional certificate program. A short YouTube video overview of the application may be found at the following link: [https://youtu.be/NRXig6r-McI](https://youtu.be/NRXig6r-McI).

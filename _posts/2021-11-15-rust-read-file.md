@@ -6,7 +6,6 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/Rust/read-file
 excerpt: This is a short article demonstrating how to read a plain text file using the Rust programming language.
 tags: [development, rust, software, programming, example]
-type: article
 ---
 
 The [Rust programming language](https://www.rust-lang.org/) is known for its lower-level implementation, similar to that of the C programming language. However, even with this in mind, it is still fairly simple to read the contents of a plain text file using Rust. 

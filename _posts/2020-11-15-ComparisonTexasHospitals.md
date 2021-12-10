@@ -6,7 +6,6 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/data-science/tree/master/ComparisonTexasHospitals
 excerpt: This is an analysis of Texas hospital ratings data.
 tags: [Data Science, business analytics]
-type: article
 ---
 
 This is an analysis of Texas hospital ratings. As part of this analysis, I have compared hospital overall ratings in Texas to other states in the United States, as well as to the national average. Additionally, this analysis compares hospital overall ratings in Texas by county, as well as by hospital ownership type (government, private, etc.). 

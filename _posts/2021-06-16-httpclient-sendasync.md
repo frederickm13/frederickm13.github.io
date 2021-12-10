@@ -6,7 +6,6 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/dotnet/HttpClient-SendAsync
 excerpt: In this post, I will be demonstrating how to re-use an HttpClient instance with multiple different API endpoints using the SendAsync method.
 tags: [C#, .NET, ASP.NET, dotnet, dotnetcore, Development, Programming, HttpClient, SendAsync]
-type: article
 ---
 
 When using the .NET [`HttpClient`](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-5.0) class, there are many different methods that allow one to send HTTP requests to specified API endpoints. Some of the most common are: 

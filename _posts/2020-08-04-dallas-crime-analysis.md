@@ -6,7 +6,6 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/data-science/tree/master/ComparisonTexasHospitals
 excerpt: I performed an analysis of city of Dallas crime data (as of the August, 2020).
 tags: [Data Science]
-type: article
 ---
 
 I performed an analysis of city of Dallas crime data (as of the August, 2020). The goal of this analysis is to identify which areas (by zip code) have the highest amount of crime, and if there are any patterns in the distribution based on crime category.
