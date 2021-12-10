@@ -47,4 +47,4 @@ When compared to a similar approach using the C programming language, the Rust a
 
 More information may be found in the Rust programming language documentation: [Reading a File](https://doc.rust-lang.org/book/ch12-02-reading-a-file.html).
 
-Additionally, the sample code used in this article may be found on my GitHub page at the following link: [code-samples/Rust/read-file](https://github.com/frederickm13/code-samples/tree/master/Rust/read-file).
+Additionally, the sample code used in this article may be found on my GitHub profile at the following link: [code-samples/Rust/read-file](https://github.com/frederickm13/code-samples/tree/master/Rust/read-file).
