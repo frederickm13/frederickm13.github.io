@@ -6,7 +6,6 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/data-science/tree/master/DallasAnimalServicesAnalysis
 excerpt: I would like to share one of my recently completed projects as a student in the Master of Science in Business Analytics program at The University of Dallas. This project is an in-depth analysis of Dallas Animal Services data using modern cloud technologies.
 tags: [Data Science]
-type: article
 ---
 
 I would like to share one of my recently completed projects as a student in the Master of Science in Business Analytics program at [The University of Dallas](https://udallas.edu/). This project is an in-depth analysis of Dallas Animal Services data using modern cloud technologies. 

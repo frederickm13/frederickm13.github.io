@@ -6,7 +6,6 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/Python/ThreeWaysToMeasurePythonCodePerformance
 excerpt: Are you looking for ways to measure the performance of your Python code/applications? 
 tags: [python, performance, development, tracing, trace, profiling, profile, stats, statistics]
-type: article
 ---
 
 Are you looking for ways to measure the performance of your Python code/applications? 

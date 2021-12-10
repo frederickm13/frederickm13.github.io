@@ -6,7 +6,6 @@ external: GitHub
 sourceurl: https://github.com/frederickm13/data-science/tree/master/ClimateChangeAnalysis
 excerpt: As part of this project, I performed an analysis of CDP (www.cdp.net) climate survey data.
 tags: [python, SQL, analytics, statistics, business, data science, business analytics]
-type: article
 ---
 
 ## Overview
