@@ -1,9 +1,9 @@
 ---
-title: Articles
-layout: Articles
-permalink: /articles/
-description: View all articles.
+title: Posts
+layout: Posts
+permalink: /posts/
+description: View all posts.
 
 ---
 
-# Articles
+# Posts

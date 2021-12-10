@@ -14,7 +14,7 @@ function filterBySearch() {
 
     const searchStringLower = searchString.trim().toLowerCase();
 
-    const articlesList = document.querySelectorAll("#articles-list li");
+    const articlesList = document.querySelectorAll("#posts-list li");
 
     if (articlesList.length < 1) {
         return;
