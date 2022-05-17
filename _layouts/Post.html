@@ -1,32 +1,30 @@
 ---
-layout: Base
+layout: default
 ---
 
 <article>
     <header>
-        <h1>{{ page.title }}</h1> 
-        <p class="text-secondary font-italic">Erick McCollum | {{ page.date | date_to_string }}</p>
-    </header> 
+        <h1 class="w3-monospace w3-xxlarge">{{ page.title }}</h1>
+        <p class="w3-center w3-text-grey ">Erick McCollum | {{ page.date | date_to_string }}</p>
+    </header>
 
     <div>
         {% include disclaimer.html %}
         {{ content }}
-        <div class="row py-3">
-            {% if page.external %}
-            <div class="col-sm">
-                <a href="{{ page.sourceurl }}">
-                    {% if page.external == "GitHub" %}
-                    <i class="fab fa-github-square"></i> View on GitHub
-                    {% endif %}
-                    {% if page.external == "LinkedIn" %}
-                    <i class="fab fa-linkedin"></i> View on LinkedIn
-                    {% endif %}
-                    {% if page.external == "Tableau" %}
-                    <i class="fas fa-chart-bar"></i> View on Tableau Public
-                    {% endif %}
-                </a>
-            </div>
-            {% endif %}
+        {% if page.external %}
+        <div class="w3-center">
+            <a href="{{ page.sourceurl }}" class="w3-button w3-round">
+                {% if page.external == "GitHub" %}
+                <i class="fab fa-github-square"></i> View on GitHub
+                {% endif %}
+                {% if page.external == "LinkedIn" %}
+                <i class="fab fa-linkedin"></i> View on LinkedIn
+                {% endif %}
+                {% if page.external == "Tableau" %}
+                <i class="fas fa-chart-bar"></i> View on Tableau Public
+                {% endif %}
+            </a>
         </div>
+        {% endif %}
     </div>
 </article>

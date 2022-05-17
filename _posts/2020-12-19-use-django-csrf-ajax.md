@@ -1,6 +1,6 @@
 ---
 title: How to use Django's built-in CSRF protection with AJAX requests
-layout: Post
+layout: post
 date:  2020-12-19 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/Django/UseCsrfWithAjax
@@ -23,7 +23,7 @@ We already have a Django web application created. In this web application, there
 
 I have included the code for this view function below, for reference: 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     import json
     from django.http import JsonResponse
@@ -49,7 +49,7 @@ Now that we have clarified some assumptions, let's proceed with the walkthrough.
 ### 1. Retrieve the CSRF token from the browser cookie.
 To retrieve the CSRF token from the browser cookie, we can borrow some JavaScript code from the Django CSRF documentation ([Cross Site Request Forgery Protection](https://docs.djangoproject.com/en/3.1/ref/csrf/)): 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     // JavaScript function to get cookie by name; retrieved from https://docs.djangoproject.com/en/3.1/ref/csrf/
     function getCookie(name) {
@@ -75,7 +75,7 @@ After retrieving the CSRF token from the browser cookie, we need to set it as th
 
 Please see the code for this wrapper function below: 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     // JavaScript wrapper function to send HTTP requests using Django's "X-CSRFToken" request header
     function sendHttpAsync(path, method, body) {
@@ -114,7 +114,7 @@ Please see the code for this wrapper function below:
 ### 3. Send the AJAX "POST" request. 
 Now that we have 1) retrieved the CSRF token from the browser cookie and 2) set it as the "X-CSRFToken" request header for our AJAX request, we can proceed to send our AJAX "POST" request to the server. To do this, I have bound the following JavaScript function to the "submit" event of our web page's form: 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     // JavaScript submit function
     function sampleSubmit(event) {

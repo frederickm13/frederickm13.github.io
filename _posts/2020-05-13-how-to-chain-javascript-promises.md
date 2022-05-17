@@ -1,6 +1,6 @@
 ---
 title: How to Chain JavaScript Promises
-layout: Post
+layout: post
 date: 2020-05-13 -0600
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/JavaScript/ChainingPromises
 excerpt: A good understanding of how to chain JavaScript Promise objects will greatly improve the productivity of a JavaScript developer.
@@ -21,7 +21,7 @@ In order to chain `Promise` objects in JavaScript, it is important to understand
 ### Promise.prototype.then() method
 The `.then()` method can be appended onto the end of a `Promise` object to execute a callback function depending on whether the `Promise` succeeded or failed. The syntax for the `.then()` method is as follows:
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     // In this example, 'prom' is a Promise object
 
@@ -40,7 +40,7 @@ The `.catch()` method can be appended onto the end of a `Promise` object, simila
 
 In fact, the `.catch()` method is actually just a shorthand version of passing a callback function as the second parameter of the `.then()` method. The syntax for the `.catch()` method is as follows:
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     // In this example, 'prom' is a Promise object
 
@@ -55,7 +55,7 @@ Similar to the `.then()` method, the `.catch()` method returns a `Promise` objec
 ## Chaining Promises
 Since the `.then()` and `.catch()` methods can both be appended onto a `Promise` object, and they both return their own `Promise` objects, these two methods can be used to chain multiple `Promise` objects together. Please see the example below, demonstrating how to chain `Promise` objects together in JavaScript: 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     // In this example, 'prom' is a Promise object
 

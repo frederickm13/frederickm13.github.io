@@ -1,6 +1,6 @@
 ---
 title: json-to-csv-flask Web Application
-layout: Post
+layout: post
 date:  2020-09-05 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/json-to-csv-flask

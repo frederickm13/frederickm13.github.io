@@ -1,6 +1,6 @@
 ---
 title: How to use async/await in JavaScript
-layout: Post
+layout: post
 date:  2021-04-20 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/JavaScript/UseAsyncAwaitJavaScript
@@ -28,7 +28,7 @@ For example, please see below how a `Promise`-based function can be re-written t
 
 **Function definition using `Promise` object**:
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     function getDataAsync() {
         return new Promise((resolve, reject) => {
@@ -45,7 +45,7 @@ For example, please see below how a `Promise`-based function can be re-written t
 
 **Function definition using `async` keyword**:
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     async function getDataAsync() {
         try {
@@ -67,7 +67,7 @@ For example, please see below how a function call using `Promise` objects can be
 
 **Function call using `Promise` object**:
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     function getDataAndDoSomethingAsync() {
         getDataAsync()
@@ -83,7 +83,7 @@ For example, please see below how a function call using `Promise` objects can be
 
 **Function call using `await` keyword**:
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     async function getDataAndDoSomethingAsync() {
         try {

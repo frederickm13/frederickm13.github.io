@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | ErickMcCollum.com</title>
+
+        <!-- Meta Tags -->
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{page.excerpt}}{% else %}{{ site.description }}{% endif %}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="msvalidate.01" content="9DF9070C978838240D90F72307A75AE8" />
+        <meta name="google-site-verification" content="Y7Zt0RhuROza3esqs8FCUabqVkC-APoo-4LNwWkdQGA" />
+
+        <!-- OpenGraph Meta Tags-->
+        <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | ErickMcCollum.com"/>
+        <meta property="og:image" content="https://erickmccollum.com/assets/images/WebsiteLogo.jpg"/>
+        <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}ErickMcCollum.com{% endif %}"/>
+        <meta property="og:url" content="{% if page.url %}https://erickmccollum.com{{ page.url }}{% else %}https://erickmccollum.com{% endif %}"/>
+
+        <!-- Linked Resources -->
+        <link rel="icon" href="/assets/images/my_FavIcon.png" type="image/png">
+        <link rel="shortcut icon" href="/assets/images/my_FavIcon.png" type="image/png">
+        <link rel="apple-touch-icon" href="/assets/images/my_FavIcon.png" type="image/png">
+        <link rel="stylesheet" href="/assets/third-party/w3css-4.15/w3.css">
+        <link rel="stylesheet" href="/assets/third-party/fontawesome-free-5.12.0-web/css/fontawesome.css">
+        <link rel="stylesheet" href="/assets/third-party/fontawesome-free-5.12.0-web/css/solid.css">
+        <link rel="stylesheet" href="/assets/third-party/fontawesome-free-5.12.0-web/css/brands.css">
+        <link rel="stylesheet" href="/assets/style/main.css">
+    </head>
+
+    <body class="w3-padding-large">
+        <div class="w3-row">
+            <div class="w3-third w3-container">
+                <div class="w3-center">
+                    <a href="/" class="w3-button w3-round w3-monospace w3-xlarge">ErickMcCollum.com</a>
+                </div>
+                <div class="w3-center">
+                    <img src="/assets/images/ErickHeadshot.jpeg" class="w3-circle" style="width:50%" />
+                </div>
+                <nav>
+                    <ul class="w3-ul w3-center">
+                        <li>
+                            <a href="/assets/pdf/FM_Resume.pdf" class="w3-button w3-round"><i class="fas fa-file fa-2x"></i> Resumé</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/erick-mccollum" class="w3-button w3-round"><i class="fab fa-linkedin fa-2x"></i> LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/frederickm13" class="w3-button w3-round"><i class="fab fa-github fa-2x"></i> GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/users/15205828/frederickm13" class="w3-button w3-round"><i class="fab fa-stack-overflow fa-2x"></i> Stack Overflow</a>
+                        </li>
+                        <li>
+                            <a href="mailto:fgmccollum4@gmail.com" class="w3-button w3-round"><i class="fas fa-envelope-square fa-2x"></i> Email</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="w3-center">
+                    <p>This site is powered by <a href="https://www.w3schools.com/w3css/default.asp">W3 CSS</a>, <a href="https://pages.github.com/">GitHub Pages</a>, <a href="https://designapp.io/">designapp.io</a>, and <a href="https://fontawesome.com">FontAwesome</a>.</p>
+                    <p>Copyright &copy; ErickMcCollum.com 2019</p>
+                    <p><a href="https://github.com/frederickm13/frederickm13.github.io/blob/master/LICENSE">License</a> | <a href="/terms-conditions/">Terms & Conditions</a> | <a href="/privacy-policy/">Privacy Policy</a> | <a href="/disclaimer/">Disclaimer</a></p>
+                </div>
+            </div>
+            <div class="w3-twothird w3-container">
+                {{ content }}
+            </div>
+        </div>
+    </body>
+
+</html>

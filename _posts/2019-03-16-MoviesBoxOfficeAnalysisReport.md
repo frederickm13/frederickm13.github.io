@@ -1,6 +1,6 @@
 ---
 title: What Factors Influence Net Revenue and Return on Investment of Movies at the Box Office?
-layout: Post
+layout: post
 date:  2019-03-16 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/data-science/tree/master/MoviesBoxOfficeAnalysisReport

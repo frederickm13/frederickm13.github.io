@@ -1,6 +1,6 @@
 ---
 title: Analysis of Dallas Animal Services Data
-layout: Post
+layout: post
 date:  2020-01-27 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/data-science/tree/master/DallasAnimalServicesAnalysis

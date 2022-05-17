@@ -1,6 +1,6 @@
 ---
-title: Terms & Conditions 
-layout: Base
+title: Terms & Conditions
+layout: default
 permalink: /terms-conditions/
 description: Terms & Conditions for ErickMcCollum.com.
 ---

@@ -1,6 +1,6 @@
 ---
 title: Who Should Learn Computer Programming?
-layout: Post
+layout: post
 date:  2019-07-21 -0600
 external: LinkedIn
 sourceurl: https://www.linkedin.com/pulse/who-should-learn-computer-programming-frederick-erick-mccollum/

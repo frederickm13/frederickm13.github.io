@@ -1,6 +1,6 @@
 ---
 title: CSV Splitter Application
-layout: Post
+layout: post
 external: GitHub
 date:  2019-01-24 -0600
 sourceurl: https://github.com/frederickm13/data-science/tree/master/CsvSplitter

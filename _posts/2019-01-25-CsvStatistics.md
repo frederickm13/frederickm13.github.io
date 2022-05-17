@@ -1,6 +1,6 @@
 ---
 title: CSV Statistics Application
-layout: Post
+layout: post
 external: GitHub
 date:  2019-01-25 -0600
 sourceurl: https://github.com/frederickm13/data-science/tree/master/CsvStatistics

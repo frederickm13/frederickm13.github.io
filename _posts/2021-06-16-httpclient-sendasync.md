@@ -1,6 +1,6 @@
 ---
 title: How to re-use an HttpClient instance with SendAsync
-layout: Post
+layout: post
 date:  2021-06-16 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/dotnet/HttpClient-SendAsync
@@ -26,7 +26,7 @@ To demonstrate this, I have provided an example below. The first code snippet sh
 
 ## Using [`HttpClient.PostAsync()`](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.postasync?view=net-5.0).
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     // Create Uri and POST body content.
     Uri requestUri = new Uri("https://example.com/api/");
@@ -43,7 +43,7 @@ To demonstrate this, I have provided an example below. The first code snippet sh
 
 ## Using [`HttpClient.SendAsync()`](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.sendasync?view=net-5.0).
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     // Create Uri and POST body content.
     Uri requestUri = new Uri("https://example.com/api/");

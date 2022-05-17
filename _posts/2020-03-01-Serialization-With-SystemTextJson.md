@@ -1,6 +1,6 @@
 ---
 title: Comparing the Performance of System.Text.Json and Newtonsoft.Json in .NET Core
-layout: Post
+layout: post
 date:  2020-03-01 -0600
 external: LinkedIn
 sourceurl: https://www.linkedin.com/pulse/comparing-performance-systemtextjson-newtonsoftjson-net-mccollum
@@ -15,7 +15,7 @@ In this article, I will be comparing the performance of basic JSON serialization
 ## Performance Test Overview
 I will be performing a very basic performance test using a .NET Core 3.1 console application. Within this console application, I have created a minimal "Note" class that contains three properties: "Id" (integer), "Title" (string), and "NoteText" (string). Please find a code snippet of the "Note" class below:
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     class Note 
     { 
@@ -39,7 +39,7 @@ I will create one million (1,000,000) instances of this "Note" class, and then a
 
 Below is a code snippet showing how the list will be serialized, and how the timings will be captured, for both the *System.Text.Json* and *Newtonsoft.Json* APIs:
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     public static int SysJsonSerializeTimer(List&lt;Note&gt; noteList) 
     { 
@@ -67,7 +67,7 @@ The full code used for this performance test may be found in my *[GitHub](https:
 
 The performance results from this console application may be seen below:
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     ITERATION      SYSTEM.TEXT.JSON (ms)    NEWTONSOFT.JSON (ms) 
     1              1293                     2058 

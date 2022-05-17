@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-layout: Base
+layout: default
 permalink: /privacy-policy/
 description: Privacy Policy for ErickMcCollum.com.
 ---
@@ -16,7 +16,7 @@ We **do not** use Your Personal data to provide and improve the Service.
 ### Interpretation
 The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
 
-### Definitions 
+### Definitions
 For the purposes of this Privacy Policy:
 - **Account** means a unique account created for You to access our Service or parts of our Service.
 - **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to ErickMcCollum.com and its owner, Erick McCollum.
@@ -33,7 +33,7 @@ For the purposes of this Privacy Policy:
 
 ## Collecting and Using Your Personal Data
 ### Types of Data Collected
-#### Personal Data 
+#### Personal Data
 While using Our Service, We **do not** ask You to provide Us with certain personally identifiable information that can be used to contact or identify You.
 
 #### Usage Data
@@ -42,7 +42,7 @@ Usage Data **is not** collected automatically when using the Service.
 We **do not** collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.
 
 #### Tracking Technologies and Cookies
-We **do not** use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. 
+We **do not** use Cookies and similar tracking technologies to track the activity on Our Service and store certain information.
 
 Learn more about cookies: [Cookies: What Do They Do?](https://www.freeprivacypolicy.com/blog/cookies/).
 
@@ -57,7 +57,7 @@ The Company **does not** collect or retain Your Personal Data.
 ### Transfer of Your Personal Data
 Your information, including Personal Data, **is not** processed by the Company.
 
-### Disclosure of Your Personal Data 
+### Disclosure of Your Personal Data
 The Company **does not** collect or disclose Your Personal Data.
 
 ### Security of Your Personal Data
