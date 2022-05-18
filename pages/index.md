@@ -14,7 +14,7 @@ I am currently employed by *[H-E-B](https://www.heb.com/)* as a Software Enginee
 <ul class="w3-ul">
     {% for post in site.posts %}
         <li>
-            <a href="{{ post.url }}" class="w3-button w3-round">{{ post.title }} | <span class="w3-text-grey">{{ post.date | date_to_string }}</span></a>
+            <a href="{{ post.url }}">{{ post.title }} | <span class="w3-text-grey">{{ post.date | date_to_string }}</span></a>
         </li>
     {% endfor %}
 </ul>
