@@ -1,6 +1,6 @@
 ---
-title: Disclaimer 
-layout: Base
+title: Disclaimer
+layout: default
 permalink: /disclaimer/
 description: Disclaimer for ErickMcCollum.com.
 ---

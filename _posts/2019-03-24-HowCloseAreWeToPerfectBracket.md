@@ -1,6 +1,6 @@
 ---
 title: How Close Are We to a Perfect NCAA Tournament Bracket?
-layout: Post
+layout: post
 date:  2019-03-24 -0600
 external: LinkedIn
 sourceurl: https://www.linkedin.com/pulse/how-close-we-perfect-ncaa-tournament-bracket-mccollum/

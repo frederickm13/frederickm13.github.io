@@ -1,6 +1,6 @@
 ---
 title: How to convert a callback-based function to a promise-based function in JavaScript
-layout: Post
+layout: post
 date:  2021-02-09 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/JavaScript/ConvertCallbackToPromise
@@ -15,7 +15,7 @@ Fortunately, promise objects in JavaScript are much easier to write well-organiz
 ## Callback function example
 For example, the [Node.js fs.readFile](https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fs_readfile_path_options_callback) function requires a callback function, rather than a utilizing a promise object. In order to read a text file using this function, one might use code similar to the following excerpt. 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     fs.readFile("MyTextFile.txt", "utf8", (err, data) => {
         if (err) {
@@ -32,7 +32,7 @@ Now I understand that the above code seems fine (syntactically speaking, it is f
 ## Create a "wrapper" function to use a promise object instead of a callback function
 As mentioned above, it is possible to create a "wrapper" promise-based function in order to solve the organizability and maintanability problems that nested callback functions may cause. For example, the following code excerpt creates a "wrapper" function that converts the [Node.js fs.readFile](https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fs_readfile_path_options_callback) function to use a promise object.
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     async function readFileAsync(path) {
         return new Promise((resolve, reject) => {
@@ -53,7 +53,7 @@ With the above "wrapper" function, it is now possible to use the [Node.js fs.rea
 ## Using the "wrapper" function with a promise object
 In order to read a file using the above newly created "wrapper" function, one could use the below code excerpt. 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     getFilesAsync("MyTextFile.txt")
         .then(data => {
@@ -67,7 +67,7 @@ In order to read a file using the above newly created "wrapper" function, one co
 
 Alternatively, it is also possible to use this function with async/await operators. This is demostrated in the following code excerpt. 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     try {
         const textContent = await getFilesAsync("MyTextFile.txt");

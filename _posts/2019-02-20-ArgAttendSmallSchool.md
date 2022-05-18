@@ -1,6 +1,6 @@
 ---
 title: The Argument for Attending a Smaller University
-layout: Post
+layout: post
 date:  2019-02-20 -0600
 external: LinkedIn
 sourceurl: https://www.linkedin.com/pulse/argument-attending-smaller-university-frederick-erick-mccollum/

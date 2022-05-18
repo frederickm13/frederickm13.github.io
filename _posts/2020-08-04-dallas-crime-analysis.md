@@ -1,6 +1,6 @@
 ---
 title: What areas of Dallas have the highest amount of crime?
-layout: Post
+layout: post
 date:  2020-08-04 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/data-science/tree/master/ComparisonTexasHospitals

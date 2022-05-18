@@ -1,6 +1,6 @@
 ---
 title: ElectronTextEditor Application
-layout: Post
+layout: post
 date:  2021-01-31 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/ElectronTextEditor

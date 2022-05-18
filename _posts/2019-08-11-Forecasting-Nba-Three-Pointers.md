@@ -1,6 +1,6 @@
 ---
 title: Forecasting NBA Three Pointers Made for the Next Five Seasons
-layout: Post
+layout: post
 date:  2019-08-11 -0600
 external: LinkedIn
 sourceurl: https://www.linkedin.com/pulse/forecasting-nba-three-pointers-made-next-five-seasons-mccollum/

@@ -1,7 +1,4 @@
 https://erickmccollum.com
-https://erickmccollum.com/posts
-https://erickmccollum.com/about
-https://erickmccollum.com/contact
 https://erickmccollum.com/assets/pdf/FM_Resume.pdf
 https://erickmccollum.com/2019/01/24/CsvSplitter.html
 https://erickmccollum.com/2019/01/24/WebSourceCode.html
@@ -34,3 +31,4 @@ https://erickmccollum.com/2021/10/31/three-ways-to-measure-python-performance.ht
 https://erickmccollum.com/2021/11/11/climate-change-analysis.html
 https://erickmccollum.com/2021/11/15/rust-read-file.html
 https://erickmccollum.com/2021/12/09/unit-testing-django.html
+https://erickmccollum.com/2022/02/12/tips-improve-workplace-communication.html

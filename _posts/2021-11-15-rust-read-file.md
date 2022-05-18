@@ -1,6 +1,6 @@
 ---
 title: How to read a plain text file in Rust
-layout: Post
+layout: post
 date:  2021-11-15 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/Rust/read-file
@@ -12,7 +12,7 @@ The [Rust programming language](https://www.rust-lang.org/) is known for its low
 
 For example, assuming that there is a text file named `test.txt` in the parent directory of a Rust program, one could read the entire contents of that text file using the following code snippet: 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     use std::fs;
 
@@ -31,7 +31,7 @@ For example, assuming that there is a text file named `test.txt` in the parent d
 
 In my example, the above code produced the following output: 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     % cargo run
 

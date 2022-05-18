@@ -1,6 +1,6 @@
 ---
 title: Comparing the performance of Entity Framework Core and SqlDataReader in ASP.NET Core
-layout: Post
+layout: post
 date:  2021-04-27 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/dotnet/EFCoreVsSqlDataReader

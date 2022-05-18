@@ -1,6 +1,6 @@
 ---
 title: Three tips to improve workplace communication
-layout: Post
+layout: post
 date:  2022-02-12 -0600
 excerpt: Communication is one of the most important skills to be successful in your career.
 tags: [soft skills, career, growth, time management, planning, coordination, collaboration]

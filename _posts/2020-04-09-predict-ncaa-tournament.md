@@ -1,6 +1,6 @@
 ---
 title: Predictive Model to Predict NCAA March Madness Results
-layout: Post
+layout: post
 date:  2020-04-09 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/data-science/tree/master/PredictingNcaaMarchMadnessResults

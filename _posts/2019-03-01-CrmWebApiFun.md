@@ -1,6 +1,6 @@
 ---
 title: CrmWebApiFun.cs Sample "Helper" Class
-layout: Post
+layout: post
 date:  2019-03-01 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/Dynamics365/WebApiCsharp

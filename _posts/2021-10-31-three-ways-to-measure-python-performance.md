@@ -1,6 +1,6 @@
 ---
 title: Three ways to measure the performance of your Python code
-layout: Post
+layout: post
 date:  2021-10-31 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/code-samples/tree/master/Python/ThreeWaysToMeasurePythonCodePerformance
@@ -22,7 +22,7 @@ Please note that all sample code used in this article may be found on my [GitHub
 ## Using the `time.perf_counter()` function.
 The `time.perf_counter()` function returns a performance counter value can be used to measure execution time of Python code. For example, to measure the execution time of a simple `for` loop, one could use code similar to the following: 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     start_time = time.perf_counter()
     
@@ -43,7 +43,7 @@ The `timeit` module provides a simple way to measure the execution time of Pytho
 ### Command-line interface.
 One could execute the following command to use the `timeit` command-line interface:
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     $ python3 -m timeit 'for i in range(10): print(i)'
 
@@ -52,7 +52,7 @@ One could execute the following command to use the `timeit` command-line interfa
 ### Callable function.
 In order to use the `timeit` callable function, one could use code similar to the following: 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     def test_fn():
         for i in range(10):
@@ -67,7 +67,7 @@ Please note that the `timeit.timeit()` callable function does not have a default
 ## Using the `profile` and `cProfile` modules.
 The `profile` and `cProfile` modules provide more in-depth statistics than `time.perf_counter()` and `timeit`. There are many ways to use the `profile` and `cProfile` modules. However, I have shared one example code snippet below which uses the same simple `for` loop as the previous examples: 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     with cProfile.Profile() as pr:
         for i in range(10):
@@ -79,7 +79,7 @@ The `profile` and `cProfile` modules provide more in-depth statistics than `time
 
 Running the above code snippet produces an output similar to the following: 
 
-<pre class="bg-light rounded" style="overflow: auto;">
+<pre class="w3-light-grey w3-round" style="overflow: auto;">
 
     12 function calls in 0.000 seconds
 

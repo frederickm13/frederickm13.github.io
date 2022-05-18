@@ -1,6 +1,6 @@
 ---
 title: Comparison of Texas Hospitals
-layout: Post
+layout: post
 date:  2020-11-15 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/data-science/tree/master/ComparisonTexasHospitals

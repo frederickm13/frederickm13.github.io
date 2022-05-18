@@ -1,6 +1,6 @@
 ---
 title: Unlocking Climate Solutions (Climate Change Analysis)
-layout: Post
+layout: post
 date:  2021-11-11 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/data-science/tree/master/ClimateChangeAnalysis

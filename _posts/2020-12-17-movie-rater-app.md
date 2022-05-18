@@ -1,6 +1,6 @@
 ---
 title: MovieRater Application
-layout: Post
+layout: post
 date:  2020-12-17 -0600
 external: GitHub
 sourceurl: https://github.com/frederickm13/movie-rater
