@@ -13,7 +13,9 @@ In this article, I will first cover the basic steps to create an SSH configurati
 *Please note, the examples in this article are for MacOS. The steps may be similar for the Linux or Windows operating systems (more similar for Linux than Windows). However, before attempting to set up an SSH config on your system, please first consult the documentation for your specific operating system.*
 
 ## Create/edit an SSH configuration file.
-1. First, check if the hidden SSH directory is already present on your system by running the following command: 
+
+### 1. Check if the hidden SSH directory is present.
+First, check if the hidden SSH directory is already present on your system by running the following command: 
 
 <pre class="w3-light-grey w3-round" style="overflow: auto;">
 
@@ -23,7 +25,8 @@ In this article, I will first cover the basic steps to create an SSH configurati
 
 If you see a `.ssh` directory present in the output, then that is great! Skip ahead to step #3. If the `.ssh` directory is not present in the output, then continue to step #2.
 
-2. Run the following commands to create a hidden `.ssh` directory and set the appropriate permissions for the folder:
+### 2. Create the hidden SSH directory.
+Run the following commands to create a hidden `.ssh` directory and set the appropriate permissions for the folder:
 
 <pre class="w3-light-grey w3-round" style="overflow: auto;">
 
@@ -32,7 +35,8 @@ If you see a `.ssh` directory present in the output, then that is great! Skip ah
 
 </pre>
 
-3. Now, check if the SSH config file is already present by running the following command in your terminal: 
+### 3. Check if the SSH config file is present. If not, create it.
+Now, check if the SSH config file is already present by running the following command in your terminal: 
 
 <pre class="w3-light-grey w3-round" style="overflow: auto;">
 
@@ -51,7 +55,8 @@ If the `config` file is not present after running the above-mentioned command, t
 
 </pre>
 
-4. Now that we have confirmed the SSH config file is present, we can run the following command to open the file for editing: 
+### 4. Open the SSH config file for editing.
+Now that we have confirmed the SSH config file is present, we can run the following command to open the file for editing: 
 
 <pre class="w3-light-grey w3-round" style="overflow: auto;">
 
@@ -61,7 +66,8 @@ If the `config` file is not present after running the above-mentioned command, t
 
 *Please note, please feel free to use a different text editor to edit the `config` file, if preferred. In the above example, I have used `nano` because it is present on almost all MacOS systems.*
 
-5. With the SSH config file open, we can start adding our configuration properties. For example, we could add the following config values: 
+### 5. Add SSH configuration properties.
+With the SSH config file open, we can start adding our configuration properties. For example, we could add the following config values: 
 
 <pre class="w3-light-grey w3-round" style="overflow: auto;">
 
