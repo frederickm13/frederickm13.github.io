@@ -2,7 +2,7 @@
 title: How to configure SSH to store private key passphrases in the MacOS Keychain
 layout: post
 date:  2022-06-23 -0600
-excerpt: 
+excerpt: In order to better secure SSH private keys, it is considered good practice to set a passphrase on the private key. However, it can prove cumbersome to enter this passphrase every time the SSH private key is used. When using MacOS, it is possible to configure SSH to store and load your private key passphrases in the MacOS Keychain. This would only require the user to input the private key's passphrase once. After that, the SSH private key and it's passphrase will be automatically loaded each time the user reboots or logs in to their system. 
 tags: [programming, development, software, tools]
 ---
 
