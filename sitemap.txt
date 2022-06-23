@@ -32,3 +32,4 @@ https://erickmccollum.com/2021/11/11/climate-change-analysis.html
 https://erickmccollum.com/2021/11/15/rust-read-file.html
 https://erickmccollum.com/2021/12/09/unit-testing-django.html
 https://erickmccollum.com/2022/02/12/tips-improve-workplace-communication.html
+https://erickmccollum.com/2022/06/22/ssh-config.html
