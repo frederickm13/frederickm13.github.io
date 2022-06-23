@@ -48,7 +48,7 @@ Once the above lines have been added, you can add any private key passphrases to
 
 </pre>
 
-*Please replace `{path_to_key}` in the above command with the actual path to your private key file. 
+*Please replace `{path_to_key}` in the above command with the actual path to your private key file.*
 
 After entering the above command, you should be prompted to enter the private key passphrase. However, this should only need to be done once. 
 
