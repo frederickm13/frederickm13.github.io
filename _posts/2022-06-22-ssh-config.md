@@ -1,8 +1,8 @@
 ---
-title: How to configure an SSH config file on MacOS.
+title: How to configure an SSH config file on MacOS
 layout: post
 date:  2022-06-22 -0600
-excerpt: 
+excerpt: An SSH configuration file allows the user to configure default SSH configuration values for their SSH client. This can include default server connection information, hostname aliases, identity file (key) preferences, credential storage preferences, and much more. 
 tags: [programming, development, software, tools]
 ---
 
