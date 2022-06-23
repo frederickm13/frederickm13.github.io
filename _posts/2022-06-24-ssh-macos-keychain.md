@@ -13,7 +13,9 @@ When using MacOS, it is possible to configure SSH to store and load your private
 I have included steps to accomplish this below. 
 
 ## Configure SSH to store private key passphrases in the MacOS Keychain.
-1. First, open the SSH config file for editing by using the following command, or the text editor of your choice. 
+
+### 1. Open SSH config file for editing.
+First, open the SSH config file for editing by using the following command, or the text editor of your choice. 
 
 *Please note, if you do not yet have an SSH config file created, then I recommend reviewing the following article first: [How to configure an SSH config file on MacOS](https://erickmccollum.com/2022/06/22/ssh-config.html).*
 
@@ -23,7 +25,8 @@ I have included steps to accomplish this below.
 
 </pre>
 
-2. With the SSH config file open, please add the following lines at the top of your terminal. Save and close the config file afterward. 
+### 2. Add MacOS Keychain configuration properties to the SSH config file.
+With the SSH config file open, please add the following lines at the top of your terminal. Save and close the config file afterward. 
 
 <pre class="w3-light-grey w3-round" style="overflow: auto;">
 
@@ -36,7 +39,8 @@ The above two lines will do the following:
 - `AddKeysToAgent`: Instruct SSH to automatically load all private keys into the `ssh-agent` identity cache. 
 - `UseKeychain`: Instruct SSH try and load private key passphrases from the MacOS Keychain, if they are present. This will also configure SSH to store private key passphrases in the MacOS Keychain once they are verified to be correct.
 
-3. Once the above lines have been added, you can add any private key passphrases to the MacOS Keychain using the following command. 
+### 3. Add private key passphrase to the MacOS Keychain. 
+Once the above lines have been added, you can add any private key passphrases to the MacOS Keychain using the following command. 
 
 <pre class="w3-light-grey w3-round" style="overflow: auto;">
 
