@@ -44,11 +44,11 @@ Once the above lines have been added, you can add any private key passphrases to
 
 <pre class="w3-light-grey w3-round" style="overflow: auto;">
 
-    ssh-add --apple-use-keychain ~/.ssh/<path_to_key>
+    ssh-add --apple-use-keychain ~/.ssh/{path_to_key}
 
 </pre>
 
-*Please replace `<path_to_key>` in the above command with the actual path to your private key file. 
+*Please replace `{path_to_key}` in the above command with the actual path to your private key file. 
 
 After entering the above command, you should be prompted to enter the private key passphrase. However, this should only need to be done once. 
 
