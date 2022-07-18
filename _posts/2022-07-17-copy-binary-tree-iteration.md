@@ -2,7 +2,7 @@
 title: How to copy a binary tree using iteration
 layout: post
 date:  2022-07-17 -0600
-excerpt: 
+excerpt: While the most common way to copy a binary tree is using a recursive approach, I recently wanted to challenge myself to find an iterative solution to this problem.
 tags: [programming, development, software]
 ---
 
