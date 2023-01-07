@@ -35,3 +35,4 @@ https://erickmccollum.com/2022/02/12/tips-improve-workplace-communication.html
 https://erickmccollum.com/2022/06/22/ssh-config.html
 https://erickmccollum.com/2022/06/23/ssh-macos-keychain.html
 https://erickmccollum.com/2022/07/17/copy-binary-tree-iteration.html
+https://erickmccollum.com/2023/01/05/three-tips-web-api.html
